@@ -28,74 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnback = new System.Windows.Forms.Button();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnlogin = new System.Windows.Forms.Button();
+            this.txtadmin = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button2
+            // btnback
             // 
-            this.button2.Location = new System.Drawing.Point(237, 276);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnback.Location = new System.Drawing.Point(254, 273);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(101, 42);
+            this.btnback.TabIndex = 12;
+            this.btnback.Text = "Back";
+            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
-            // textBox2
+            // txtpass
             // 
-            this.textBox2.Location = new System.Drawing.Point(466, 212);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 11;
+            this.txtpass.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.Location = new System.Drawing.Point(379, 176);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(229, 34);
+            this.txtpass.TabIndex = 11;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(234, 218);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(197, 182);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(102, 26);
             this.label2.TabIndex = 10;
-            this.label2.Text = "label2";
+            this.label2.Text = "Password";
             // 
-            // button1
+            // btnlogin
             // 
-            this.button1.Location = new System.Drawing.Point(491, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnlogin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.Location = new System.Drawing.Point(475, 273);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(101, 42);
+            this.btnlogin.TabIndex = 9;
+            this.btnlogin.Text = "Login";
+            this.btnlogin.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtadmin
             // 
-            this.textBox1.Location = new System.Drawing.Point(466, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtadmin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtadmin.Location = new System.Drawing.Point(379, 115);
+            this.txtadmin.Name = "txtadmin";
+            this.txtadmin.Size = new System.Drawing.Size(229, 34);
+            this.txtadmin.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(234, 157);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(197, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(76, 26);
             this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
+            this.label1.Text = "Admin";
             // 
             // AdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnback);
+            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnlogin);
+            this.Controls.Add(this.txtadmin);
             this.Controls.Add(this.label1);
             this.Name = "AdminLogin";
             this.Text = "AdminLogin";
@@ -106,11 +114,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.TextBox txtadmin;
         private System.Windows.Forms.Label label1;
     }
 }
