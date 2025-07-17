@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace EventManagement
 {
-    public partial class Register : Form
+    public partial class frmRegister : Form
     {
-        public Register()
+        public frmRegister()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

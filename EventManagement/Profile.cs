@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EventManagement
 {
-    public partial class Profile : Form
+    public partial class frmProfile : Form
     {
-        public Profile()
+        public frmProfile()
         {
             InitializeComponent();
         }

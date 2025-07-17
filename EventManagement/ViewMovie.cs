@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EventManagement
 {
-    public partial class ViewMovie : Form
+    public partial class frmViewMovie : Form
     {
-        public ViewMovie()
+        public frmViewMovie()
         {
             InitializeComponent();
         }

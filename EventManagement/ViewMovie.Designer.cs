@@ -1,6 +1,6 @@
 ﻿namespace EventManagement
 {
-    partial class ViewMovie
+    partial class frmViewMovie
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ViewmovieBackbtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 48);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 350);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.label1.Location = new System.Drawing.Point(38, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 26);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "view movie";
+            // 
+            // ViewmovieBackbtn
+            // 
+            this.ViewmovieBackbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.ViewmovieBackbtn.Location = new System.Drawing.Point(615, 413);
+            this.ViewmovieBackbtn.Name = "ViewmovieBackbtn";
+            this.ViewmovieBackbtn.Size = new System.Drawing.Size(108, 34);
+            this.ViewmovieBackbtn.TabIndex = 24;
+            this.ViewmovieBackbtn.Text = "Back";
+            this.ViewmovieBackbtn.UseVisualStyleBackColor = true;
+            // 
+            // frmViewMovie
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ViewmovieBackbtn);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "frmViewMovie";
             this.Text = "ViewMovie";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button ViewmovieBackbtn;
     }
 }

@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace EventManagement
 {
-    public partial class ViewConcert : Form
+    public partial class frmViewConcert : Form
     {
-        public ViewConcert()
+        public frmViewConcert()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
