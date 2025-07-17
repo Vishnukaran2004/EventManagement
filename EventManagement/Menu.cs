@@ -51,5 +51,24 @@ namespace EventManagement
             AboutUs aboutUs = new AboutUs();
             aboutUs.Show();
         }
+
+        private void editProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmProfile profile = new frmProfile();  
+            profile.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login loginForm = new Login();
+            loginForm.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

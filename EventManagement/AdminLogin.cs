@@ -33,6 +33,7 @@ namespace EventManagement
             }
             else
             {
+                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 AdminMenu adminMenu = new AdminMenu();
                 adminMenu.Show();
