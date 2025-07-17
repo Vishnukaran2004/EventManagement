@@ -75,6 +75,7 @@
             this.txtpw.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.txtpw.Location = new System.Drawing.Point(365, 173);
             this.txtpw.Name = "txtpw";
+            this.txtpw.PasswordChar = '*';
             this.txtpw.Size = new System.Drawing.Size(269, 34);
             this.txtpw.TabIndex = 5;
             // 

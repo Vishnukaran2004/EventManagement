@@ -94,6 +94,7 @@
             // 
             this.TBregpnum.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.TBregpnum.Location = new System.Drawing.Point(367, 186);
+            this.TBregpnum.MaxLength = 10;
             this.TBregpnum.Name = "TBregpnum";
             this.TBregpnum.Size = new System.Drawing.Size(268, 34);
             this.TBregpnum.TabIndex = 4;
