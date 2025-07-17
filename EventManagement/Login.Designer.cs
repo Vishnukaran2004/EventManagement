@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.register = new System.Windows.Forms.LinkLabel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtemal = new System.Windows.Forms.TextBox();
+            this.lbregister = new System.Windows.Forms.LinkLabel();
+            this.txtpw = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnback = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -49,34 +49,34 @@
             this.label1.Text = "Email";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtemal
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(365, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 34);
-            this.textBox1.TabIndex = 1;
+            this.txtemal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtemal.Location = new System.Drawing.Point(365, 110);
+            this.txtemal.Name = "txtemal";
+            this.txtemal.Size = new System.Drawing.Size(269, 34);
+            this.txtemal.TabIndex = 1;
             // 
-            // register
+            // lbregister
             // 
-            this.register.AutoSize = true;
-            this.register.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.register.Location = new System.Drawing.Point(483, 387);
-            this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(87, 23);
-            this.register.TabIndex = 2;
-            this.register.TabStop = true;
-            this.register.Text = "Register ";
-            this.register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.lbregister.AutoSize = true;
+            this.lbregister.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbregister.Location = new System.Drawing.Point(483, 387);
+            this.lbregister.Name = "lbregister";
+            this.lbregister.Size = new System.Drawing.Size(87, 23);
+            this.lbregister.TabIndex = 2;
+            this.lbregister.TabStop = true;
+            this.lbregister.Text = "Register ";
+            this.lbregister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // textBox2
+            // txtpw
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(365, 173);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(269, 34);
-            this.textBox2.TabIndex = 5;
+            this.txtpw.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpw.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtpw.Location = new System.Drawing.Point(365, 173);
+            this.txtpw.Name = "txtpw";
+            this.txtpw.Size = new System.Drawing.Size(269, 34);
+            this.txtpw.TabIndex = 5;
             // 
             // label2
             // 
@@ -88,25 +88,26 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
             // 
-            // button2
+            // btnback
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.button2.Location = new System.Drawing.Point(487, 282);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 44);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "BACK";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnback.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnback.Location = new System.Drawing.Point(487, 282);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(115, 44);
+            this.btnback.TabIndex = 6;
+            this.btnback.Text = "BACK";
+            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(215, 282);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 44);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "LOG IN";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(215, 282);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(115, 44);
+            this.btnLogin.TabIndex = 7;
+            this.btnLogin.Text = "LOG IN";
+            this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -125,12 +126,12 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnback);
+            this.Controls.Add(this.txtpw);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.register);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbregister);
+            this.Controls.Add(this.txtemal);
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Login";
@@ -142,12 +143,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.LinkLabel register;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtemal;
+        private System.Windows.Forms.LinkLabel lbregister;
+        private System.Windows.Forms.TextBox txtpw;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label3;
     }
 }
