@@ -48,8 +48,8 @@
             this.paymentDetailsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(12, 8, 0, 8);
-            this.menuStrip1.Size = new System.Drawing.Size(1200, 40);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 6, 0, 6);
+            this.menuStrip1.Size = new System.Drawing.Size(900, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,12 +67,14 @@
             this.movieBookingToolStripMenuItem.Name = "movieBookingToolStripMenuItem";
             this.movieBookingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.movieBookingToolStripMenuItem.Text = "Movie Booking";
+            this.movieBookingToolStripMenuItem.Click += new System.EventHandler(this.movieBookingToolStripMenuItem_Click);
             // 
             // concertBookingToolStripMenuItem
             // 
             this.concertBookingToolStripMenuItem.Name = "concertBookingToolStripMenuItem";
             this.concertBookingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.concertBookingToolStripMenuItem.Text = "Concert Booking";
+            this.concertBookingToolStripMenuItem.Click += new System.EventHandler(this.concertBookingToolStripMenuItem_Click);
             // 
             // manageToolStripMenuItem
             // 
@@ -88,28 +90,32 @@
             this.movieManageToolStripMenuItem.Name = "movieManageToolStripMenuItem";
             this.movieManageToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.movieManageToolStripMenuItem.Text = "Movie Manage";
+            this.movieManageToolStripMenuItem.Click += new System.EventHandler(this.movieManageToolStripMenuItem_Click);
             // 
             // concertManageToolStripMenuItem
             // 
             this.concertManageToolStripMenuItem.Name = "concertManageToolStripMenuItem";
             this.concertManageToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.concertManageToolStripMenuItem.Text = "Concert Manage";
+            this.concertManageToolStripMenuItem.Click += new System.EventHandler(this.concertManageToolStripMenuItem_Click);
             // 
             // paymentDetailsToolStripMenuItem
             // 
             this.paymentDetailsToolStripMenuItem.Name = "paymentDetailsToolStripMenuItem";
             this.paymentDetailsToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
             this.paymentDetailsToolStripMenuItem.Text = "Payment Details";
+            this.paymentDetailsToolStripMenuItem.Click += new System.EventHandler(this.paymentDetailsToolStripMenuItem_Click);
             // 
             // AdminMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 68F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 51F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 1054);
+            this.BackColor = System.Drawing.Color.Cornsilk;
+            this.ClientSize = new System.Drawing.Size(900, 431);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Sans Serif Collection", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 13, 4, 13);
+            this.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.Name = "AdminMenu";
             this.Text = "AdminMenu";
             this.menuStrip1.ResumeLayout(false);
