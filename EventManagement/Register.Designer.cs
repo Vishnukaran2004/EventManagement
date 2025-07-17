@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TBregname = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TBregemail = new System.Windows.Forms.TextBox();
+            this.txtmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TBregpnum = new System.Windows.Forms.TextBox();
+            this.txtnum = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.TBregpass = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.TBregcname = new System.Windows.Forms.TextBox();
+            this.txtconpass = new System.Windows.Forms.TextBox();
             this.RegBackbtn = new System.Windows.Forms.Button();
             this.RegOkbtn = new System.Windows.Forms.Button();
             this.RegLoginbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // TBregname
+            // txtname
             // 
-            this.TBregname.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBregname.Location = new System.Drawing.Point(367, 72);
-            this.TBregname.Name = "TBregname";
-            this.TBregname.Size = new System.Drawing.Size(268, 34);
-            this.TBregname.TabIndex = 0;
+            this.txtname.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtname.Location = new System.Drawing.Point(367, 72);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(268, 34);
+            this.txtname.TabIndex = 0;
             // 
             // label1
             // 
@@ -72,13 +72,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Email";
             // 
-            // TBregemail
+            // txtmail
             // 
-            this.TBregemail.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBregemail.Location = new System.Drawing.Point(367, 124);
-            this.TBregemail.Name = "TBregemail";
-            this.TBregemail.Size = new System.Drawing.Size(268, 34);
-            this.TBregemail.TabIndex = 2;
+            this.txtmail.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtmail.Location = new System.Drawing.Point(367, 124);
+            this.txtmail.Name = "txtmail";
+            this.txtmail.Size = new System.Drawing.Size(268, 34);
+            this.txtmail.TabIndex = 2;
             // 
             // label3
             // 
@@ -90,14 +90,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Phone number";
             // 
-            // TBregpnum
+            // txtnum
             // 
-            this.TBregpnum.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBregpnum.Location = new System.Drawing.Point(367, 186);
-            this.TBregpnum.MaxLength = 10;
-            this.TBregpnum.Name = "TBregpnum";
-            this.TBregpnum.Size = new System.Drawing.Size(268, 34);
-            this.TBregpnum.TabIndex = 4;
+            this.txtnum.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtnum.Location = new System.Drawing.Point(367, 186);
+            this.txtnum.MaxLength = 10;
+            this.txtnum.Name = "txtnum";
+            this.txtnum.Size = new System.Drawing.Size(268, 34);
+            this.txtnum.TabIndex = 4;
             // 
             // label4
             // 
@@ -109,13 +109,13 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Password";
             // 
-            // TBregpass
+            // txtpass
             // 
-            this.TBregpass.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBregpass.Location = new System.Drawing.Point(367, 235);
-            this.TBregpass.Name = "TBregpass";
-            this.TBregpass.Size = new System.Drawing.Size(268, 34);
-            this.TBregpass.TabIndex = 6;
+            this.txtpass.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtpass.Location = new System.Drawing.Point(367, 235);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(268, 34);
+            this.txtpass.TabIndex = 6;
             // 
             // label5
             // 
@@ -127,13 +127,13 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Confirm password";
             // 
-            // TBregcname
+            // txtconpass
             // 
-            this.TBregcname.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBregcname.Location = new System.Drawing.Point(367, 294);
-            this.TBregcname.Name = "TBregcname";
-            this.TBregcname.Size = new System.Drawing.Size(268, 34);
-            this.TBregcname.TabIndex = 8;
+            this.txtconpass.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtconpass.Location = new System.Drawing.Point(367, 294);
+            this.txtconpass.Name = "txtconpass";
+            this.txtconpass.Size = new System.Drawing.Size(268, 34);
+            this.txtconpass.TabIndex = 8;
             // 
             // RegBackbtn
             // 
@@ -155,6 +155,7 @@
             this.RegOkbtn.TabIndex = 11;
             this.RegOkbtn.Text = "Ok";
             this.RegOkbtn.UseVisualStyleBackColor = true;
+            this.RegOkbtn.Click += new System.EventHandler(this.RegOkbtn_Click);
             // 
             // RegLoginbtn
             // 
@@ -177,15 +178,15 @@
             this.Controls.Add(this.RegOkbtn);
             this.Controls.Add(this.RegBackbtn);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.TBregcname);
+            this.Controls.Add(this.txtconpass);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.TBregpass);
+            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TBregpnum);
+            this.Controls.Add(this.txtnum);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TBregemail);
+            this.Controls.Add(this.txtmail);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TBregname);
+            this.Controls.Add(this.txtname);
             this.Name = "frmRegister";
             this.Text = "Register";
             this.ResumeLayout(false);
@@ -195,16 +196,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox TBregname;
+        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TBregemail;
+        private System.Windows.Forms.TextBox txtmail;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TBregpnum;
+        private System.Windows.Forms.TextBox txtnum;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TBregpass;
+        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TBregcname;
+        private System.Windows.Forms.TextBox txtconpass;
         private System.Windows.Forms.Button RegBackbtn;
         private System.Windows.Forms.Button RegOkbtn;
         private System.Windows.Forms.Button RegLoginbtn;

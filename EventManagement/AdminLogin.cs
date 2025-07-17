@@ -26,9 +26,17 @@ namespace EventManagement
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            AdminMenu adminMenu = new AdminMenu();
-            adminMenu.Show();
+            if (txtadmin.Text == "" || txtpass.Text == "")
+            {
+                MessageBox.Show("Please fill all the fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                this.Hide();
+                AdminMenu adminMenu = new AdminMenu();
+                adminMenu.Show();
+            }
         }
     }
 }

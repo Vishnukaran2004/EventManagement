@@ -38,9 +38,17 @@ namespace EventManagement
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Menu menu = new Menu();
-            menu.Show();
+            if (txtemal.Text == "" || txtpw.Text == "")
+            {
+                MessageBox.Show("Please fill all the fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                this.Hide();
+                Menu menu = new Menu();
+                menu.Show();
+            }
         }
     }
 }
