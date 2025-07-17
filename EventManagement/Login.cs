@@ -19,7 +19,9 @@ namespace EventManagement
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Hide();
+            frmRegister register = new frmRegister();
+            register.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,7 +31,16 @@ namespace EventManagement
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Home home = new Home();
+            home.Show();
+        }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
         }
     }
 }

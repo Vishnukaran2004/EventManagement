@@ -23,5 +23,12 @@ namespace EventManagement
             Home home= new Home();
             home.Show();
         }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminMenu adminMenu = new AdminMenu();
+            adminMenu.Show();
+        }
     }
 }

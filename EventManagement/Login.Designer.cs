@@ -91,7 +91,7 @@
             // btnback
             // 
             this.btnback.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.btnback.Location = new System.Drawing.Point(487, 282);
+            this.btnback.Location = new System.Drawing.Point(233, 281);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(115, 44);
             this.btnback.TabIndex = 6;
@@ -102,12 +102,13 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(215, 282);
+            this.btnLogin.Location = new System.Drawing.Point(455, 281);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(115, 44);
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "LOG IN";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label3
             // 
