@@ -16,5 +16,12 @@ namespace EventManagement
         {
             InitializeComponent();
         }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home= new Home();
+            home.Show();
+        }
     }
 }
