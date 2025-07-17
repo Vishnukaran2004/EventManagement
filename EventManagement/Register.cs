@@ -21,5 +21,19 @@ namespace EventManagement
         {
 
         }
+
+        private void RegBackbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home homeForm = new Home();
+            homeForm.Show();
+        }
+
+        private void RegLoginbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login loginForm = new Login();
+            loginForm.Show();
+        }
     }
 }

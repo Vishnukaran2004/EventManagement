@@ -104,9 +104,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label4.Location = new System.Drawing.Point(148, 238);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 26);
+            this.label4.Size = new System.Drawing.Size(102, 26);
             this.label4.TabIndex = 7;
-            this.label4.Text = "password";
+            this.label4.Text = "Password";
             // 
             // TBregpass
             // 
@@ -137,17 +137,18 @@
             // RegBackbtn
             // 
             this.RegBackbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.RegBackbtn.Location = new System.Drawing.Point(110, 394);
+            this.RegBackbtn.Location = new System.Drawing.Point(153, 394);
             this.RegBackbtn.Name = "RegBackbtn";
             this.RegBackbtn.Size = new System.Drawing.Size(103, 34);
             this.RegBackbtn.TabIndex = 10;
             this.RegBackbtn.Text = "Back";
             this.RegBackbtn.UseVisualStyleBackColor = true;
+            this.RegBackbtn.Click += new System.EventHandler(this.RegBackbtn_Click);
             // 
             // RegOkbtn
             // 
             this.RegOkbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.RegOkbtn.Location = new System.Drawing.Point(316, 394);
+            this.RegOkbtn.Location = new System.Drawing.Point(532, 394);
             this.RegOkbtn.Name = "RegOkbtn";
             this.RegOkbtn.Size = new System.Drawing.Size(103, 34);
             this.RegOkbtn.TabIndex = 11;
@@ -157,17 +158,19 @@
             // RegLoginbtn
             // 
             this.RegLoginbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.RegLoginbtn.Location = new System.Drawing.Point(517, 394);
+            this.RegLoginbtn.Location = new System.Drawing.Point(345, 394);
             this.RegLoginbtn.Name = "RegLoginbtn";
             this.RegLoginbtn.Size = new System.Drawing.Size(103, 34);
             this.RegLoginbtn.TabIndex = 12;
             this.RegLoginbtn.Text = "Login";
             this.RegLoginbtn.UseVisualStyleBackColor = true;
+            this.RegLoginbtn.Click += new System.EventHandler(this.RegLoginbtn_Click);
             // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.RegLoginbtn);
             this.Controls.Add(this.RegOkbtn);
