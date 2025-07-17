@@ -177,6 +177,9 @@
     <EmbeddedResource Include="Movies.resx">
       <DependentUpon>Movies.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
