@@ -30,5 +30,17 @@ namespace EventManagement
             Login frmLogin = new Login();
             frmLogin.Show();
         }
+
+        private void btnadmin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminLogin frmAdminLogin = new AdminLogin();
+            frmAdminLogin.Show();
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
