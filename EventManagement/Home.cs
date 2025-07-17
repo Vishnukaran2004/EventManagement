@@ -16,5 +16,19 @@ namespace EventManagement
         {
             InitializeComponent();
         }
+
+        private void btnregister_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmRegister frmRegister = new frmRegister();
+            frmRegister.Show();
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login frmLogin = new Login();
+            frmLogin.Show();
+        }
     }
 }
