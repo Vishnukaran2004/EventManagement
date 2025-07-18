@@ -79,5 +79,12 @@ namespace EventManagement
             Moviebooking movieBookingForm = new Moviebooking("THE MOON");
             movieBookingForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
     }
 }

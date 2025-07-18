@@ -70,5 +70,26 @@ namespace EventManagement
         {
             Application.Exit();
         }
+
+        private void btncam_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("CAMATHAAR");
+            movieBookingForm.Show();
+        }
+
+        private void btncyum_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("SHI - YAM");
+            movieBookingForm.Show();
+        }
+
+        private void btnmushroom_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("MUSHROOM");
+            movieBookingForm.Show();
+        }
     }
 }

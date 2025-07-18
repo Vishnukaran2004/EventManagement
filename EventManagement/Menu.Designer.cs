@@ -33,18 +33,19 @@
             this.moviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.concertsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btncam = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnmushroom = new System.Windows.Forms.Button();
             this.btncyum = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnslban = new System.Windows.Forms.Button();
-            this.btnani = new System.Windows.Forms.Button();
-            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btncon3 = new System.Windows.Forms.Button();
+            this.btncon1 = new System.Windows.Forms.Button();
+            this.btncon2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -94,6 +95,37 @@
             this.paymentToolStripMenuItem.Text = "Payment";
             this.paymentToolStripMenuItem.Click += new System.EventHandler(this.paymentToolStripMenuItem_Click);
             // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editProfileToolStripMenuItem,
+            this.logoutToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.profileToolStripMenuItem.Text = "Profile";
+            // 
+            // editProfileToolStripMenuItem
+            // 
+            this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.editProfileToolStripMenuItem.Text = "Edit Profile";
+            this.editProfileToolStripMenuItem.Click += new System.EventHandler(this.editProfileToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
@@ -110,6 +142,7 @@
             this.btncam.Text = "Cammathar";
             this.btncam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncam.UseVisualStyleBackColor = true;
+            this.btncam.Click += new System.EventHandler(this.btncam_Click);
             // 
             // groupBox1
             // 
@@ -133,6 +166,7 @@
             this.btnmushroom.Text = "Mushroom";
             this.btnmushroom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmushroom.UseVisualStyleBackColor = true;
+            this.btnmushroom.Click += new System.EventHandler(this.btnmushroom_Click);
             // 
             // btncyum
             // 
@@ -140,14 +174,16 @@
             this.btncyum.Name = "btncyum";
             this.btncyum.Size = new System.Drawing.Size(122, 129);
             this.btncyum.TabIndex = 2;
-            this.btncyum.Text = "C-Yum";
+            this.btncyum.Text = "SHI - YAM";
             this.btncyum.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncyum.UseVisualStyleBackColor = true;
+            this.btncyum.Click += new System.EventHandler(this.btncyum_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnslban);
-            this.groupBox2.Controls.Add(this.btnani);
+            this.groupBox2.Controls.Add(this.btncon2);
+            this.groupBox2.Controls.Add(this.btncon3);
+            this.groupBox2.Controls.Add(this.btncon1);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(0, 278);
             this.groupBox2.Name = "groupBox2";
@@ -156,56 +192,35 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Events";
             // 
-            // btnslban
+            // btncon3
             // 
-            this.btnslban.Location = new System.Drawing.Point(382, 37);
-            this.btnslban.Name = "btnslban";
-            this.btnslban.Size = new System.Drawing.Size(122, 129);
-            this.btnslban.TabIndex = 2;
-            this.btnslban.Text = "SL vs Ban T20";
-            this.btnslban.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnslban.UseVisualStyleBackColor = true;
+            this.btncon3.Location = new System.Drawing.Point(655, 37);
+            this.btncon3.Name = "btncon3";
+            this.btncon3.Size = new System.Drawing.Size(122, 129);
+            this.btncon3.TabIndex = 2;
+            this.btncon3.Text = "SL vs Ban T20";
+            this.btncon3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btncon3.UseVisualStyleBackColor = true;
             // 
-            // btnani
+            // btncon1
             // 
-            this.btnani.Location = new System.Drawing.Point(133, 37);
-            this.btnani.Name = "btnani";
-            this.btnani.Size = new System.Drawing.Size(122, 129);
-            this.btnani.TabIndex = 1;
-            this.btnani.Text = "Aniruth Concert";
-            this.btnani.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnani.UseVisualStyleBackColor = true;
+            this.btncon1.Location = new System.Drawing.Point(133, 37);
+            this.btncon1.Name = "btncon1";
+            this.btncon1.Size = new System.Drawing.Size(122, 129);
+            this.btncon1.TabIndex = 1;
+            this.btncon1.Text = "VIBE ANTONY";
+            this.btncon1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btncon1.UseVisualStyleBackColor = true;
             // 
-            // profileToolStripMenuItem
+            // btncon2
             // 
-            this.profileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editProfileToolStripMenuItem,
-            this.logoutToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
-            this.profileToolStripMenuItem.Text = "Profile";
-            // 
-            // editProfileToolStripMenuItem
-            // 
-            this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.editProfileToolStripMenuItem.Text = "Edit Profile";
-            this.editProfileToolStripMenuItem.Click += new System.EventHandler(this.editProfileToolStripMenuItem_Click);
-            // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.logoutToolStripMenuItem.Text = "Logout";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.btncon2.Location = new System.Drawing.Point(382, 37);
+            this.btncon2.Name = "btncon2";
+            this.btncon2.Size = new System.Drawing.Size(122, 129);
+            this.btncon2.TabIndex = 3;
+            this.btncon2.Text = "MENIKE";
+            this.btncon2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btncon2.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
@@ -241,11 +256,12 @@
         private System.Windows.Forms.Button btnmushroom;
         private System.Windows.Forms.Button btncyum;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnslban;
-        private System.Windows.Forms.Button btnani;
+        private System.Windows.Forms.Button btncon3;
+        private System.Windows.Forms.Button btncon1;
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Button btncon2;
     }
 }
