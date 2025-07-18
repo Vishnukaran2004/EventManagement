@@ -20,14 +20,14 @@ namespace EventManagement
         private void movieBookingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Moviebooking movieBooking = new Moviebooking();
+            frmViewMovie movieBooking = new frmViewMovie();
             movieBooking.ShowDialog();
         }
 
         private void concertBookingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Concertbooking concertBooking = new Concertbooking();
+            frmViewConcert concertBooking = new frmViewConcert();
             concertBooking.ShowDialog();
         }
 

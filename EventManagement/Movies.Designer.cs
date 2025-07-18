@@ -48,6 +48,7 @@
             this.btncam.TabIndex = 0;
             this.btncam.Text = "CAMATHAAR";
             this.btncam.UseVisualStyleBackColor = true;
+            this.btncam.Click += new System.EventHandler(this.btncam_Click);
             // 
             // btnshi
             // 
@@ -58,6 +59,7 @@
             this.btnshi.TabIndex = 2;
             this.btnshi.Text = "SHI - YAM";
             this.btnshi.UseVisualStyleBackColor = true;
+            this.btnshi.Click += new System.EventHandler(this.btnshi_Click);
             // 
             // btnmush
             // 
@@ -68,6 +70,7 @@
             this.btnmush.TabIndex = 3;
             this.btnmush.Text = "MUSHROOM";
             this.btnmush.UseVisualStyleBackColor = true;
+            this.btnmush.Click += new System.EventHandler(this.btnmush_Click);
             // 
             // btnai
             // 
@@ -89,6 +92,7 @@
             this.btnkash.TabIndex = 5;
             this.btnkash.Text = "KASHMIRAA";
             this.btnkash.UseVisualStyleBackColor = true;
+            this.btnkash.Click += new System.EventHandler(this.btnkash_Click);
             // 
             // btnjan
             // 
@@ -99,6 +103,7 @@
             this.btnjan.TabIndex = 6;
             this.btnjan.Text = "JANA NAYAKAYA";
             this.btnjan.UseVisualStyleBackColor = true;
+            this.btnjan.Click += new System.EventHandler(this.btnjan_Click);
             // 
             // btnloc
             // 
@@ -109,6 +114,7 @@
             this.btnloc.TabIndex = 7;
             this.btnloc.Text = "LOCAL FROCK";
             this.btnloc.UseVisualStyleBackColor = true;
+            this.btnloc.Click += new System.EventHandler(this.btnloc_Click);
             // 
             // btnape
             // 
@@ -119,6 +125,7 @@
             this.btnape.TabIndex = 8;
             this.btnape.Text = "APE LANKA 2";
             this.btnape.UseVisualStyleBackColor = true;
+            this.btnape.Click += new System.EventHandler(this.btnape_Click);
             // 
             // btnmoon
             // 
@@ -129,6 +136,7 @@
             this.btnmoon.TabIndex = 9;
             this.btnmoon.Text = "THE MOON";
             this.btnmoon.UseVisualStyleBackColor = true;
+            this.btnmoon.Click += new System.EventHandler(this.btnmoon_Click);
             // 
             // Movies
             // 

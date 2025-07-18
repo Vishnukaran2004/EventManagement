@@ -19,7 +19,65 @@ namespace EventManagement
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("MUSHROOM");
+            movieBookingForm.Show();
+        }
 
+        private void btncam_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("CAMATHAAR");
+            movieBookingForm.Show();
+        }
+
+        private void btnshi_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("SHI - YAM");
+            movieBookingForm.Show();
+        }
+
+        private void btnmush_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("MUSHROOM");
+            movieBookingForm.Show();
+        }
+
+        private void btnjan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("JANA NAYAKAYA");
+            movieBookingForm.Show();
+        }
+
+        private void btnape_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("APE LANKA 2");
+            movieBookingForm.Show();
+        }
+
+        private void btnkash_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("KASHMIRAA");
+            movieBookingForm.Show();
+        }
+
+        private void btnloc_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("LOCAL FROCK");
+            movieBookingForm.Show();
+        }
+
+        private void btnmoon_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Moviebooking movieBookingForm = new Moviebooking("THE MOON");
+            movieBookingForm.Show();
         }
     }
 }

@@ -66,7 +66,6 @@
             "APE LANKA 2",
             "JANA NAYAKAYA",
             "AI BABY",
-            "AI BABY",
             "MUSHROOM",
             "SHI - YAM",
             "CAMATHAAR"});
@@ -196,6 +195,7 @@
             this.btncancel.TabIndex = 13;
             this.btncancel.Text = "CANCEL";
             this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // Moviebooking
             // 
@@ -219,6 +219,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Moviebooking";
             this.Text = "Moviebooking";
+            this.Load += new System.EventHandler(this.Moviebooking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numsea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
