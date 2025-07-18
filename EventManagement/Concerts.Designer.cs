@@ -35,12 +35,14 @@
             this.btnva = new System.Windows.Forms.Button();
             this.btnrod = new System.Windows.Forms.Button();
             this.btnrugby = new System.Windows.Forms.Button();
+            this.btnmenu = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnmenu);
             this.groupBox1.Controls.Add(this.btnrod);
             this.groupBox1.Controls.Add(this.btnmenike);
             this.groupBox1.Controls.Add(this.btnva);
@@ -74,6 +76,7 @@
             this.btnmenike.Text = "Menike";
             this.btnmenike.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmenike.UseVisualStyleBackColor = true;
+            this.btnmenike.Click += new System.EventHandler(this.btnmenike_Click);
             // 
             // btnslb
             // 
@@ -85,6 +88,7 @@
             this.btnslb.Text = "SL vs Ban T20";
             this.btnslb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnslb.UseVisualStyleBackColor = true;
+            this.btnslb.Click += new System.EventHandler(this.btnslb_Click);
             // 
             // btnva
             // 
@@ -96,6 +100,7 @@
             this.btnva.Text = "Vibe Antony";
             this.btnva.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnva.UseVisualStyleBackColor = true;
+            this.btnva.Click += new System.EventHandler(this.btnva_Click);
             // 
             // btnrod
             // 
@@ -107,6 +112,7 @@
             this.btnrod.Text = "Return of Dragon";
             this.btnrod.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnrod.UseVisualStyleBackColor = true;
+            this.btnrod.Click += new System.EventHandler(this.btnrod_Click);
             // 
             // btnrugby
             // 
@@ -118,6 +124,19 @@
             this.btnrugby.Text = "Rugby Match";
             this.btnrugby.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnrugby.UseVisualStyleBackColor = true;
+            this.btnrugby.Click += new System.EventHandler(this.btnrugby_Click);
+            // 
+            // btnmenu
+            // 
+            this.btnmenu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmenu.Location = new System.Drawing.Point(694, 0);
+            this.btnmenu.Name = "btnmenu";
+            this.btnmenu.Size = new System.Drawing.Size(106, 35);
+            this.btnmenu.TabIndex = 9;
+            this.btnmenu.Text = "Menu";
+            this.btnmenu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnmenu.UseVisualStyleBackColor = true;
+            this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
             // Concerts
             // 
@@ -144,5 +163,6 @@
         private System.Windows.Forms.Button btnva;
         private System.Windows.Forms.Button btnslb;
         private System.Windows.Forms.Button btnrugby;
+        private System.Windows.Forms.Button btnmenu;
     }
 }

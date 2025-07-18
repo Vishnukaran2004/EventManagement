@@ -201,6 +201,7 @@
             this.btncon3.Text = "SL vs Ban T20";
             this.btncon3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncon3.UseVisualStyleBackColor = true;
+            this.btncon3.Click += new System.EventHandler(this.btncon3_Click);
             // 
             // btncon1
             // 
@@ -211,6 +212,7 @@
             this.btncon1.Text = "VIBE ANTONY";
             this.btncon1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncon1.UseVisualStyleBackColor = true;
+            this.btncon1.Click += new System.EventHandler(this.btncon1_Click);
             // 
             // btncon2
             // 
@@ -221,6 +223,7 @@
             this.btncon2.Text = "MENIKE";
             this.btncon2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncon2.UseVisualStyleBackColor = true;
+            this.btncon2.Click += new System.EventHandler(this.btncon2_Click);
             // 
             // Menu
             // 

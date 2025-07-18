@@ -91,5 +91,26 @@ namespace EventManagement
             Moviebooking movieBookingForm = new Moviebooking("MUSHROOM");
             movieBookingForm.Show();
         }
+
+        private void btncon1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Concertbooking concertBookingForm = new Concertbooking("VIBE ANTONY");
+            concertBookingForm.Show();
+        }
+
+        private void btncon2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Concertbooking concertBookingForm = new Concertbooking("MENIKE");
+            concertBookingForm.Show();
+        }
+
+        private void btncon3_Click(object sender, EventArgs e)
+        {
+            this.Hide();    
+            Concertbooking concertBookingForm = new Concertbooking("SL vs BAN");
+            concertBookingForm.Show();
+        }
     }
 }

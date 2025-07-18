@@ -42,87 +42,90 @@
             this.rbgen = new System.Windows.Forms.RadioButton();
             this.rbvvip = new System.Windows.Forms.RadioButton();
             this.rbvip = new System.Windows.Forms.RadioButton();
-            this.btnback = new System.Windows.Forms.Button();
+            this.btnmenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numseat)).BeginInit();
             this.SuspendLayout();
             // 
             // btncancel
             // 
-            this.btncancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.Location = new System.Drawing.Point(527, 353);
+            this.btncancel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.Location = new System.Drawing.Point(236, 365);
             this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(141, 57);
+            this.btncancel.Size = new System.Drawing.Size(130, 51);
             this.btncancel.TabIndex = 27;
-            this.btncancel.Text = "CANCEL";
+            this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // btnbook
             // 
-            this.btnbook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbook.Location = new System.Drawing.Point(145, 353);
+            this.btnbook.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbook.Location = new System.Drawing.Point(439, 365);
             this.btnbook.Name = "btnbook";
-            this.btnbook.Size = new System.Drawing.Size(141, 57);
+            this.btnbook.Size = new System.Drawing.Size(130, 51);
             this.btnbook.TabIndex = 26;
-            this.btnbook.Text = "BOOK NOW";
+            this.btnbook.Text = "Book";
             this.btnbook.UseVisualStyleBackColor = true;
             // 
             // txtpri
             // 
-            this.txtpri.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtpri.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpri.Location = new System.Drawing.Point(325, 283);
             this.txtpri.Name = "txtpri";
+            this.txtpri.ReadOnly = true;
             this.txtpri.Size = new System.Drawing.Size(206, 34);
             this.txtpri.TabIndex = 25;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(84, 288);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 29);
+            this.label5.Size = new System.Drawing.Size(76, 26);
             this.label5.TabIndex = 24;
             this.label5.Text = "PRICE";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(84, 226);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 29);
+            this.label4.Size = new System.Drawing.Size(134, 26);
             this.label4.TabIndex = 23;
             this.label4.Text = "DATE /TIME";
             // 
             // datetymcon
             // 
-            this.datetymcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.datetymcon.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetymcon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.datetymcon.Location = new System.Drawing.Point(325, 231);
             this.datetymcon.Name = "datetymcon";
-            this.datetymcon.Size = new System.Drawing.Size(200, 24);
+            this.datetymcon.Size = new System.Drawing.Size(200, 34);
             this.datetymcon.TabIndex = 22;
             // 
             // numseat
             // 
-            this.numseat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.numseat.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numseat.Location = new System.Drawing.Point(325, 109);
             this.numseat.Name = "numseat";
-            this.numseat.Size = new System.Drawing.Size(186, 24);
+            this.numseat.Size = new System.Drawing.Size(129, 34);
             this.numseat.TabIndex = 21;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(84, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 29);
+            this.label3.Size = new System.Drawing.Size(78, 26);
             this.label3.TabIndex = 20;
             this.label3.Text = "SEATS";
             // 
             // cbcon
             // 
-            this.cbcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.cbcon.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbcon.FormattingEnabled = true;
             this.cbcon.Items.AddRange(new object[] {
             "RETURN OF DRAGON",
@@ -132,39 +135,41 @@
             "BLUE DIAMOND",
             "MENIKE",
             "HARRIS ALIVE",
-            "VIBE ANTONY"});
+            "VIBE ANTONY",
+            "SL vs BAN",
+            "RUGBY"});
             this.cbcon.Location = new System.Drawing.Point(325, 41);
             this.cbcon.Name = "cbcon";
-            this.cbcon.Size = new System.Drawing.Size(297, 37);
+            this.cbcon.Size = new System.Drawing.Size(244, 34);
             this.cbcon.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(84, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 29);
+            this.label1.Size = new System.Drawing.Size(186, 26);
             this.label1.TabIndex = 14;
             this.label1.Text = "CONCERT NAME";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(84, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 29);
+            this.label2.Size = new System.Drawing.Size(130, 26);
             this.label2.TabIndex = 28;
             this.label2.Text = "CATEGORY";
             // 
             // rbgen
             // 
             this.rbgen.AutoSize = true;
-            this.rbgen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.rbgen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbgen.Location = new System.Drawing.Point(325, 171);
             this.rbgen.Name = "rbgen";
-            this.rbgen.Size = new System.Drawing.Size(100, 22);
+            this.rbgen.Size = new System.Drawing.Size(121, 26);
             this.rbgen.TabIndex = 29;
             this.rbgen.TabStop = true;
             this.rbgen.Text = "GENERAL";
@@ -173,10 +178,10 @@
             // rbvvip
             // 
             this.rbvvip.AutoSize = true;
-            this.rbvvip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.rbvvip.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbvvip.Location = new System.Drawing.Point(544, 170);
             this.rbvvip.Name = "rbvvip";
-            this.rbvvip.Size = new System.Drawing.Size(60, 22);
+            this.rbvvip.Size = new System.Drawing.Size(74, 26);
             this.rbvvip.TabIndex = 30;
             this.rbvvip.TabStop = true;
             this.rbvvip.Text = "VVIP";
@@ -185,25 +190,26 @@
             // rbvip
             // 
             this.rbvip.AutoSize = true;
-            this.rbvip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.rbvip.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbvip.Location = new System.Drawing.Point(460, 171);
             this.rbvip.Name = "rbvip";
-            this.rbvip.Size = new System.Drawing.Size(51, 22);
+            this.rbvip.Size = new System.Drawing.Size(61, 26);
             this.rbvip.TabIndex = 31;
             this.rbvip.TabStop = true;
             this.rbvip.Text = "VIP";
             this.rbvip.UseVisualStyleBackColor = true;
             this.rbvip.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // btnback
+            // btnmenu
             // 
-            this.btnback.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnback.Location = new System.Drawing.Point(335, 353);
-            this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(141, 57);
-            this.btnback.TabIndex = 32;
-            this.btnback.Text = "BACK";
-            this.btnback.UseVisualStyleBackColor = true;
+            this.btnmenu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmenu.Location = new System.Drawing.Point(679, 12);
+            this.btnmenu.Name = "btnmenu";
+            this.btnmenu.Size = new System.Drawing.Size(109, 31);
+            this.btnmenu.TabIndex = 32;
+            this.btnmenu.Text = "Menu";
+            this.btnmenu.UseVisualStyleBackColor = true;
+            this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
             // Concertbooking
             // 
@@ -211,7 +217,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnback);
+            this.Controls.Add(this.btnmenu);
             this.Controls.Add(this.rbvip);
             this.Controls.Add(this.rbvvip);
             this.Controls.Add(this.rbgen);
@@ -250,6 +256,6 @@
         private System.Windows.Forms.RadioButton rbgen;
         private System.Windows.Forms.RadioButton rbvvip;
         private System.Windows.Forms.RadioButton rbvip;
-        private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.Button btnmenu;
     }
 }
