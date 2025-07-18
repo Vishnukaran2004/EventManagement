@@ -136,7 +136,7 @@
             // btnbook
             // 
             this.btnbook.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbook.Location = new System.Drawing.Point(462, 440);
+            this.btnbook.Location = new System.Drawing.Point(481, 440);
             this.btnbook.Name = "btnbook";
             this.btnbook.Size = new System.Drawing.Size(137, 46);
             this.btnbook.TabIndex = 12;

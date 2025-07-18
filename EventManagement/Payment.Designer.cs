@@ -28,42 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.rbcash = new System.Windows.Forms.RadioButton();
             this.rbcard = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbadd = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtamount = new System.Windows.Forms.TextBox();
             this.btnpay = new System.Windows.Forms.Button();
             this.btnback = new System.Windows.Forms.Button();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NAME";
-            // 
-            // txtname
-            // 
-            this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.txtname.Location = new System.Drawing.Point(385, 88);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(290, 34);
-            this.txtname.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(90, 161);
+            this.label2.Location = new System.Drawing.Point(86, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 26);
             this.label2.TabIndex = 2;
@@ -73,7 +55,7 @@
             // 
             this.rbcash.AutoSize = true;
             this.rbcash.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbcash.Location = new System.Drawing.Point(408, 161);
+            this.rbcash.Location = new System.Drawing.Point(385, 176);
             this.rbcash.Name = "rbcash";
             this.rbcash.Size = new System.Drawing.Size(92, 30);
             this.rbcash.TabIndex = 3;
@@ -85,7 +67,7 @@
             // 
             this.rbcard.AutoSize = true;
             this.rbcard.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbcard.Location = new System.Drawing.Point(566, 161);
+            this.rbcard.Location = new System.Drawing.Point(543, 176);
             this.rbcard.Name = "rbcard";
             this.rbcard.Size = new System.Drawing.Size(95, 30);
             this.rbcard.TabIndex = 4;
@@ -97,7 +79,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(90, 227);
+            this.label3.Location = new System.Drawing.Point(86, 239);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(211, 26);
             this.label3.TabIndex = 5;
@@ -113,7 +95,7 @@
             "SHORT - EATS",
             "SOFT DRINKS",
             "SNACKS"});
-            this.cmbadd.Location = new System.Drawing.Point(385, 219);
+            this.cmbadd.Location = new System.Drawing.Point(389, 228);
             this.cmbadd.Name = "cmbadd";
             this.cmbadd.Size = new System.Drawing.Size(253, 37);
             this.cmbadd.TabIndex = 6;
@@ -128,13 +110,14 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "AMOUNT";
             // 
-            // textBox1
+            // txtamount
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(385, 303);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(290, 34);
-            this.textBox1.TabIndex = 8;
+            this.txtamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtamount.Location = new System.Drawing.Point(385, 303);
+            this.txtamount.Name = "txtamount";
+            this.txtamount.ReadOnly = true;
+            this.txtamount.Size = new System.Drawing.Size(290, 34);
+            this.txtamount.TabIndex = 8;
             // 
             // btnpay
             // 
@@ -143,7 +126,7 @@
             this.btnpay.Name = "btnpay";
             this.btnpay.Size = new System.Drawing.Size(143, 43);
             this.btnpay.TabIndex = 9;
-            this.btnpay.Text = "ADD PAYMENT";
+            this.btnpay.Text = "Pay";
             this.btnpay.UseVisualStyleBackColor = true;
             // 
             // btnback
@@ -153,9 +136,28 @@
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(143, 43);
             this.btnback.TabIndex = 10;
-            this.btnback.Text = "BACK";
+            this.btnback.Text = "Back";
             this.btnback.UseVisualStyleBackColor = true;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
+            // 
+            // txtname
+            // 
+            this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtname.Location = new System.Drawing.Point(385, 122);
+            this.txtname.Name = "txtname";
+            this.txtname.ReadOnly = true;
+            this.txtname.Size = new System.Drawing.Size(290, 34);
+            this.txtname.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(90, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 26);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "NAME";
             // 
             // Payment
             // 
@@ -163,17 +165,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtname);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.btnpay);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtamount);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbadd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.rbcard);
             this.Controls.Add(this.rbcash);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtname);
-            this.Controls.Add(this.label1);
             this.Name = "Payment";
             this.Text = "Payment";
             this.ResumeLayout(false);
@@ -182,17 +184,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton rbcash;
         private System.Windows.Forms.RadioButton rbcard;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbadd;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtamount;
         private System.Windows.Forms.Button btnpay;
         private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.Label label5;
     }
 }

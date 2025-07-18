@@ -16,5 +16,12 @@ namespace EventManagement
         {
             InitializeComponent();
         }
+
+        private void btnmenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
     }
 }

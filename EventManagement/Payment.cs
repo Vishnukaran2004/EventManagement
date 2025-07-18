@@ -28,5 +28,7 @@ namespace EventManagement
             Menu menu = new Menu();
             menu.Show();
         }
+
+       
     }
 }

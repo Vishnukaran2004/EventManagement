@@ -73,7 +73,7 @@
             this.txtpri.Location = new System.Drawing.Point(325, 283);
             this.txtpri.Name = "txtpri";
             this.txtpri.ReadOnly = true;
-            this.txtpri.Size = new System.Drawing.Size(206, 34);
+            this.txtpri.Size = new System.Drawing.Size(244, 34);
             this.txtpri.TabIndex = 25;
             // 
             // label5
@@ -112,6 +112,11 @@
             this.numseat.Name = "numseat";
             this.numseat.Size = new System.Drawing.Size(129, 34);
             this.numseat.TabIndex = 21;
+            this.numseat.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label3
             // 

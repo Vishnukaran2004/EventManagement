@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnmenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -52,12 +53,24 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "We are doing since 2016 and we are successful in running this system";
             // 
+            // btnmenu
+            // 
+            this.btnmenu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmenu.Location = new System.Drawing.Point(352, 381);
+            this.btnmenu.Name = "btnmenu";
+            this.btnmenu.Size = new System.Drawing.Size(114, 38);
+            this.btnmenu.TabIndex = 2;
+            this.btnmenu.Text = "Menu";
+            this.btnmenu.UseVisualStyleBackColor = true;
+            this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
+            // 
             // AboutUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnmenu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AboutUs";
@@ -71,5 +84,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnmenu;
     }
 }

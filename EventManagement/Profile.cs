@@ -16,5 +16,19 @@ namespace EventManagement
         {
             InitializeComponent();
         }
+
+        private void ProfBackbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
+
+        private void btnlogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }
