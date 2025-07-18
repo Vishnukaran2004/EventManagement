@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ViewconcertBackbtn = new System.Windows.Forms.Button();
+            this.btnback = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // ViewconcertBackbtn
+            // btnback
             // 
-            this.ViewconcertBackbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.ViewconcertBackbtn.Location = new System.Drawing.Point(615, 405);
-            this.ViewconcertBackbtn.Name = "ViewconcertBackbtn";
-            this.ViewconcertBackbtn.Size = new System.Drawing.Size(108, 34);
-            this.ViewconcertBackbtn.TabIndex = 27;
-            this.ViewconcertBackbtn.Text = "Back";
-            this.ViewconcertBackbtn.UseVisualStyleBackColor = true;
-            this.ViewconcertBackbtn.Click += new System.EventHandler(this.button1_Click);
+            this.btnback.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.btnback.Location = new System.Drawing.Point(637, 404);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(108, 34);
+            this.btnback.TabIndex = 27;
+            this.btnback.Text = "Back";
+            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.label1.Location = new System.Drawing.Point(38, 11);
+            this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 26);
+            this.label1.Size = new System.Drawing.Size(293, 26);
             this.label1.TabIndex = 26;
-            this.label1.Text = "view Concert";
+            this.label1.Text = "View Concert Booking Details";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
@@ -73,8 +73,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ViewconcertBackbtn);
+            this.Controls.Add(this.btnback);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmViewConcert";
@@ -87,7 +88,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ViewconcertBackbtn;
+        private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }

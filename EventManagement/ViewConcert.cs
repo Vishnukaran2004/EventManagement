@@ -24,7 +24,9 @@ namespace EventManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AdminMenu adminMenu = new AdminMenu();
+            adminMenu.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
