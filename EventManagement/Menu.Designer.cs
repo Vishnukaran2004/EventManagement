@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.moviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,10 +39,10 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btncam = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnmushroom = new System.Windows.Forms.Button();
             this.btncyum = new System.Windows.Forms.Button();
+            this.btncam = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btncon2 = new System.Windows.Forms.Button();
             this.btncon3 = new System.Windows.Forms.Button();
@@ -53,6 +54,8 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.BurlyWood;
+            this.menuStrip1.BackgroundImage = global::EventManagement.Properties.Resources.bg;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eventsToolStripMenuItem,
@@ -133,37 +136,29 @@
             this.aboutUsToolStripMenuItem.Text = "About us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
-            // btncam
-            // 
-            this.btncam.BackgroundImage = global::EventManagement.Properties.Resources.e3dee7c0_4916_4aa9_b5f9_3f1a2dd21a05;
-            this.btncam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btncam.Location = new System.Drawing.Point(62, 54);
-            this.btncam.Name = "btncam";
-            this.btncam.Size = new System.Drawing.Size(261, 164);
-            this.btncam.TabIndex = 1;
-            this.btncam.Text = "CAMATHAR";
-            this.btncam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btncam.UseVisualStyleBackColor = true;
-            this.btncam.Click += new System.EventHandler(this.btncam_Click);
-            // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Controls.Add(this.btnmushroom);
             this.groupBox1.Controls.Add(this.btncyum);
             this.groupBox1.Controls.Add(this.btncam);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 32);
+            this.groupBox1.Location = new System.Drawing.Point(0, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(894, 240);
+            this.groupBox1.Size = new System.Drawing.Size(894, 274);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movies";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnmushroom
             // 
-            this.btnmushroom.Location = new System.Drawing.Point(655, 54);
+            this.btnmushroom.BackgroundImage = global::EventManagement.Properties.Resources.Mushroom;
+            this.btnmushroom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnmushroom.Location = new System.Drawing.Point(655, 29);
             this.btnmushroom.Name = "btnmushroom";
-            this.btnmushroom.Size = new System.Drawing.Size(218, 164);
+            this.btnmushroom.Size = new System.Drawing.Size(220, 220);
             this.btnmushroom.TabIndex = 3;
             this.btnmushroom.Text = "MUSHROOM";
             this.btnmushroom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -172,33 +167,52 @@
             // 
             // btncyum
             // 
-            this.btncyum.Location = new System.Drawing.Point(366, 54);
+            this.btncyum.BackgroundImage = global::EventManagement.Properties.Resources.CYum;
+            this.btncyum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncyum.Location = new System.Drawing.Point(366, 29);
             this.btncyum.Name = "btncyum";
-            this.btncyum.Size = new System.Drawing.Size(240, 164);
+            this.btncyum.Size = new System.Drawing.Size(220, 220);
             this.btncyum.TabIndex = 2;
             this.btncyum.Text = "C  YUM";
             this.btncyum.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncyum.UseVisualStyleBackColor = true;
             this.btncyum.Click += new System.EventHandler(this.btncyum_Click);
             // 
+            // btncam
+            // 
+            this.btncam.BackgroundImage = global::EventManagement.Properties.Resources.e3dee7c0_4916_4aa9_b5f9_3f1a2dd21a05;
+            this.btncam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncam.Location = new System.Drawing.Point(62, 29);
+            this.btncam.Name = "btncam";
+            this.btncam.Size = new System.Drawing.Size(220, 220);
+            this.btncam.TabIndex = 1;
+            this.btncam.Text = "CAMATHAR";
+            this.btncam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btncam.UseVisualStyleBackColor = true;
+            this.btncam.Click += new System.EventHandler(this.btncam_Click);
+            // 
             // groupBox2
             // 
+            this.groupBox2.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Controls.Add(this.btncon2);
             this.groupBox2.Controls.Add(this.btncon3);
             this.groupBox2.Controls.Add(this.btncon1);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(0, 278);
+            this.groupBox2.Location = new System.Drawing.Point(0, 296);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(894, 240);
+            this.groupBox2.Size = new System.Drawing.Size(894, 284);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Events";
             // 
             // btncon2
             // 
-            this.btncon2.Location = new System.Drawing.Point(409, 37);
+            this.btncon2.BackgroundImage = global::EventManagement.Properties.Resources.Menike;
+            this.btncon2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncon2.Location = new System.Drawing.Point(366, 37);
             this.btncon2.Name = "btncon2";
-            this.btncon2.Size = new System.Drawing.Size(166, 169);
+            this.btncon2.Size = new System.Drawing.Size(220, 220);
             this.btncon2.TabIndex = 3;
             this.btncon2.Text = "MENIKE";
             this.btncon2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -207,9 +221,10 @@
             // 
             // btncon3
             // 
-            this.btncon3.Location = new System.Drawing.Point(678, 37);
+            this.btncon3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncon3.Location = new System.Drawing.Point(655, 37);
             this.btncon3.Name = "btncon3";
-            this.btncon3.Size = new System.Drawing.Size(164, 169);
+            this.btncon3.Size = new System.Drawing.Size(220, 220);
             this.btncon3.TabIndex = 2;
             this.btncon3.Text = "SL vs Ban T20";
             this.btncon3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -218,9 +233,11 @@
             // 
             // btncon1
             // 
-            this.btncon1.Location = new System.Drawing.Point(133, 37);
+            this.btncon1.BackgroundImage = global::EventManagement.Properties.Resources.VA;
+            this.btncon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncon1.Location = new System.Drawing.Point(62, 37);
             this.btncon1.Name = "btncon1";
-            this.btncon1.Size = new System.Drawing.Size(166, 169);
+            this.btncon1.Size = new System.Drawing.Size(220, 220);
             this.btncon1.TabIndex = 1;
             this.btncon1.Text = "VIBE ANTONY";
             this.btncon1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -232,10 +249,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(894, 524);
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(894, 571);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.Text = "Menu";

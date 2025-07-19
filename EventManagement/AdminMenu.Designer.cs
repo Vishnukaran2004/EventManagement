@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movieBookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +42,8 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewToolStripMenuItem,
@@ -65,14 +68,14 @@
             // movieBookingToolStripMenuItem
             // 
             this.movieBookingToolStripMenuItem.Name = "movieBookingToolStripMenuItem";
-            this.movieBookingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.movieBookingToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.movieBookingToolStripMenuItem.Text = "Movie Booking";
             this.movieBookingToolStripMenuItem.Click += new System.EventHandler(this.movieBookingToolStripMenuItem_Click);
             // 
             // concertBookingToolStripMenuItem
             // 
             this.concertBookingToolStripMenuItem.Name = "concertBookingToolStripMenuItem";
-            this.concertBookingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.concertBookingToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.concertBookingToolStripMenuItem.Text = "Concert Booking";
             this.concertBookingToolStripMenuItem.Click += new System.EventHandler(this.concertBookingToolStripMenuItem_Click);
             // 
@@ -88,14 +91,14 @@
             // movieManageToolStripMenuItem
             // 
             this.movieManageToolStripMenuItem.Name = "movieManageToolStripMenuItem";
-            this.movieManageToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.movieManageToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.movieManageToolStripMenuItem.Text = "Movie Manage";
             this.movieManageToolStripMenuItem.Click += new System.EventHandler(this.movieManageToolStripMenuItem_Click);
             // 
             // concertManageToolStripMenuItem
             // 
             this.concertManageToolStripMenuItem.Name = "concertManageToolStripMenuItem";
-            this.concertManageToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.concertManageToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.concertManageToolStripMenuItem.Text = "Concert Manage";
             this.concertManageToolStripMenuItem.Click += new System.EventHandler(this.concertManageToolStripMenuItem_Click);
             // 
@@ -111,9 +114,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 51F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 431);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.Name = "AdminMenu";

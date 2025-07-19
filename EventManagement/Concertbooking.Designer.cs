@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Concertbooking));
             this.btncancel = new System.Windows.Forms.Button();
             this.btnbook = new System.Windows.Forms.Button();
             this.txtpri = new System.Windows.Forms.TextBox();
@@ -48,24 +49,26 @@
             // 
             // btncancel
             // 
+            this.btncancel.BackColor = System.Drawing.Color.LightSalmon;
             this.btncancel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancel.Location = new System.Drawing.Point(236, 365);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(130, 51);
             this.btncancel.TabIndex = 27;
             this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // btnbook
             // 
+            this.btnbook.BackColor = System.Drawing.Color.LightSalmon;
             this.btnbook.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbook.Location = new System.Drawing.Point(439, 365);
             this.btnbook.Name = "btnbook";
             this.btnbook.Size = new System.Drawing.Size(130, 51);
             this.btnbook.TabIndex = 26;
             this.btnbook.Text = "Book";
-            this.btnbook.UseVisualStyleBackColor = true;
+            this.btnbook.UseVisualStyleBackColor = false;
             // 
             // txtpri
             // 
@@ -79,6 +82,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(84, 288);
             this.label5.Name = "label5";
@@ -89,6 +93,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(84, 226);
             this.label4.Name = "label4";
@@ -121,6 +126,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(84, 109);
             this.label3.Name = "label3";
@@ -151,6 +157,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(84, 49);
             this.label1.Name = "label1";
@@ -161,6 +168,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(84, 164);
             this.label2.Name = "label2";
@@ -171,6 +179,7 @@
             // rbgen
             // 
             this.rbgen.AutoSize = true;
+            this.rbgen.BackColor = System.Drawing.Color.Transparent;
             this.rbgen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbgen.Location = new System.Drawing.Point(325, 171);
             this.rbgen.Name = "rbgen";
@@ -178,11 +187,12 @@
             this.rbgen.TabIndex = 29;
             this.rbgen.TabStop = true;
             this.rbgen.Text = "GENERAL";
-            this.rbgen.UseVisualStyleBackColor = true;
+            this.rbgen.UseVisualStyleBackColor = false;
             // 
             // rbvvip
             // 
             this.rbvvip.AutoSize = true;
+            this.rbvvip.BackColor = System.Drawing.Color.Transparent;
             this.rbvvip.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbvvip.Location = new System.Drawing.Point(544, 170);
             this.rbvvip.Name = "rbvvip";
@@ -190,11 +200,12 @@
             this.rbvvip.TabIndex = 30;
             this.rbvvip.TabStop = true;
             this.rbvvip.Text = "VVIP";
-            this.rbvvip.UseVisualStyleBackColor = true;
+            this.rbvvip.UseVisualStyleBackColor = false;
             // 
             // rbvip
             // 
             this.rbvip.AutoSize = true;
+            this.rbvip.BackColor = System.Drawing.Color.Transparent;
             this.rbvip.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbvip.Location = new System.Drawing.Point(460, 171);
             this.rbvip.Name = "rbvip";
@@ -202,18 +213,19 @@
             this.rbvip.TabIndex = 31;
             this.rbvip.TabStop = true;
             this.rbvip.Text = "VIP";
-            this.rbvip.UseVisualStyleBackColor = true;
+            this.rbvip.UseVisualStyleBackColor = false;
             this.rbvip.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // btnmenu
             // 
+            this.btnmenu.BackColor = System.Drawing.Color.LightSalmon;
             this.btnmenu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmenu.Location = new System.Drawing.Point(679, 12);
             this.btnmenu.Name = "btnmenu";
             this.btnmenu.Size = new System.Drawing.Size(109, 31);
             this.btnmenu.TabIndex = 32;
             this.btnmenu.Text = "Menu";
-            this.btnmenu.UseVisualStyleBackColor = true;
+            this.btnmenu.UseVisualStyleBackColor = false;
             this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
             // Concertbooking
@@ -221,6 +233,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnmenu);
             this.Controls.Add(this.rbvip);
@@ -237,6 +251,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbcon);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Concertbooking";
             this.Text = "Concertbooking";
             ((System.ComponentModel.ISupportInitialize)(this.numseat)).EndInit();

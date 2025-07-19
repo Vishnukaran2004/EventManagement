@@ -45,53 +45,57 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(452, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(414, 73);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(374, 238);
             this.dataGridView1.TabIndex = 21;
             // 
             // btnback
             // 
+            this.btnback.BackColor = System.Drawing.Color.LightSalmon;
             this.btnback.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnback.Location = new System.Drawing.Point(574, 366);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(121, 44);
             this.btnback.TabIndex = 16;
             this.btnback.Text = "Back";
-            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // btnremove
             // 
+            this.btnremove.BackColor = System.Drawing.Color.LightSalmon;
             this.btnremove.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnremove.Location = new System.Drawing.Point(443, 366);
             this.btnremove.Name = "btnremove";
             this.btnremove.Size = new System.Drawing.Size(121, 44);
             this.btnremove.TabIndex = 15;
             this.btnremove.Text = "Remove";
-            this.btnremove.UseVisualStyleBackColor = true;
+            this.btnremove.UseVisualStyleBackColor = false;
             // 
             // btnupdate
             // 
+            this.btnupdate.BackColor = System.Drawing.Color.LightSalmon;
             this.btnupdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.Location = new System.Drawing.Point(306, 366);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(121, 44);
             this.btnupdate.TabIndex = 14;
             this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.UseVisualStyleBackColor = false;
             // 
             // btnadd
             // 
+            this.btnadd.BackColor = System.Drawing.Color.LightSalmon;
             this.btnadd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Location = new System.Drawing.Point(170, 366);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(121, 44);
             this.btnadd.TabIndex = 13;
             this.btnadd.Text = "Add";
-            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.UseVisualStyleBackColor = false;
             // 
             // txtvenue
             // 
@@ -104,6 +108,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(94, 197);
             this.label4.Name = "label4";
@@ -122,6 +127,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(94, 135);
             this.label5.Name = "label5";
@@ -140,6 +146,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(94, 76);
             this.label6.Name = "label6";
@@ -152,6 +159,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtvenue);
             this.Controls.Add(this.label4);

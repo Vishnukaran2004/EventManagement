@@ -28,82 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.btnlogin = new System.Windows.Forms.Button();
             this.btnregister = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnexit = new System.Windows.Forms.Button();
             this.btnadmin = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnlogin
             // 
+            this.btnlogin.BackColor = System.Drawing.Color.LightSalmon;
             this.btnlogin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Location = new System.Drawing.Point(175, 261);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(122, 50);
             this.btnlogin.TabIndex = 0;
             this.btnlogin.Text = "Login";
-            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // btnregister
             // 
+            this.btnregister.BackColor = System.Drawing.Color.LightSalmon;
             this.btnregister.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregister.Location = new System.Drawing.Point(495, 261);
             this.btnregister.Name = "btnregister";
             this.btnregister.Size = new System.Drawing.Size(122, 50);
             this.btnregister.TabIndex = 1;
             this.btnregister.Text = "Register";
-            this.btnregister.UseVisualStyleBackColor = true;
+            this.btnregister.UseVisualStyleBackColor = false;
             this.btnregister.Click += new System.EventHandler(this.btnregister_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(124, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(572, 53);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Event Management System";
             // 
             // btnexit
             // 
+            this.btnexit.BackColor = System.Drawing.Color.LightSalmon;
             this.btnexit.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexit.Location = new System.Drawing.Point(666, 388);
             this.btnexit.Name = "btnexit";
             this.btnexit.Size = new System.Drawing.Size(122, 50);
             this.btnexit.TabIndex = 3;
             this.btnexit.Text = "Exit";
-            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.UseVisualStyleBackColor = false;
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // btnadmin
             // 
+            this.btnadmin.BackColor = System.Drawing.Color.LightSalmon;
             this.btnadmin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadmin.Location = new System.Drawing.Point(666, 12);
             this.btnadmin.Name = "btnadmin";
             this.btnadmin.Size = new System.Drawing.Size(122, 50);
             this.btnadmin.TabIndex = 4;
             this.btnadmin.Text = "Admin";
-            this.btnadmin.UseVisualStyleBackColor = true;
+            this.btnadmin.UseVisualStyleBackColor = false;
             this.btnadmin.Click += new System.EventHandler(this.btnadmin_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::EventManagement.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(291, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 174);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnadmin);
             this.Controls.Add(this.btnexit);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnregister);
             this.Controls.Add(this.btnlogin);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
             this.Text = "Home";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -111,9 +120,9 @@
 
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.Button btnregister;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnexit;
         private System.Windows.Forms.Button btnadmin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

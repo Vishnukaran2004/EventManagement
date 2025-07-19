@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminLogin));
             this.btnback = new System.Windows.Forms.Button();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,13 +39,14 @@
             // 
             // btnback
             // 
+            this.btnback.BackColor = System.Drawing.Color.LightSalmon;
             this.btnback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnback.Location = new System.Drawing.Point(254, 273);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(101, 42);
             this.btnback.TabIndex = 12;
             this.btnback.Text = "Back";
-            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // txtpass
@@ -59,6 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(197, 182);
             this.label2.Name = "label2";
@@ -68,13 +71,14 @@
             // 
             // btnlogin
             // 
+            this.btnlogin.BackColor = System.Drawing.Color.LightSalmon;
             this.btnlogin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Location = new System.Drawing.Point(475, 273);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(101, 42);
             this.btnlogin.TabIndex = 9;
             this.btnlogin.Text = "Login";
-            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // txtadmin
@@ -88,6 +92,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(197, 121);
             this.label1.Name = "label1";
@@ -100,6 +105,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.txtpass);
@@ -107,6 +113,7 @@
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtadmin);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminLogin";
             this.Text = "AdminLogin";
             this.ResumeLayout(false);

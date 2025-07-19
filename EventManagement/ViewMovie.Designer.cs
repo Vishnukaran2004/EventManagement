@@ -49,6 +49,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label1.Location = new System.Drawing.Point(12, 19);
             this.label1.Name = "label1";
@@ -58,13 +59,14 @@
             // 
             // btnback
             // 
+            this.btnback.BackColor = System.Drawing.Color.LightSalmon;
             this.btnback.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.btnback.Location = new System.Drawing.Point(615, 413);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(108, 34);
             this.btnback.TabIndex = 24;
             this.btnback.Text = "Back";
-            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // frmViewMovie
@@ -72,6 +74,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.label1);

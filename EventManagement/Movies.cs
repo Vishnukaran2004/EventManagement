@@ -20,7 +20,7 @@ namespace EventManagement
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Moviebooking movieBookingForm = new Moviebooking("MUSHROOM");
+            Moviebooking movieBookingForm = new Moviebooking("AI BABY");
             movieBookingForm.Show();
         }
 
@@ -62,21 +62,21 @@ namespace EventManagement
         private void btnkash_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Moviebooking movieBookingForm = new Moviebooking("KASHMIRAA");
+            Moviebooking movieBookingForm = new Moviebooking("ZOMBIE AND 4 IDIOTS");
             movieBookingForm.Show();
         }
 
         private void btnloc_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Moviebooking movieBookingForm = new Moviebooking("LOCAL FROCK");
+            Moviebooking movieBookingForm = new Moviebooking("THE POLICE AND CREW");
             movieBookingForm.Show();
         }
 
         private void btnmoon_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Moviebooking movieBookingForm = new Moviebooking("THE MOON");
+            Moviebooking movieBookingForm = new Moviebooking("GHOSTY RYDER");
             movieBookingForm.Show();
         }
 

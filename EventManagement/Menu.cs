@@ -112,5 +112,10 @@ namespace EventManagement
             Concertbooking concertBookingForm = new Concertbooking("SL vs BAN");
             concertBookingForm.Show();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

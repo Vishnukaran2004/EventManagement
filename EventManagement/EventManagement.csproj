@@ -233,5 +233,44 @@
   <ItemGroup>
     <None Include="Resources\e3dee7c0-4916-4aa9-b5f9-3f1a2dd21a05.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AIBABY.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jananayakaya.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mushroom.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApeLanka.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CYum.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zombie.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VA.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ROD.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menike.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GhostRider.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Police.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

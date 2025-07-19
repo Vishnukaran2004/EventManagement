@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegister));
             this.txtname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(147, 72);
             this.label1.Name = "label1";
@@ -65,6 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(148, 132);
             this.label2.Name = "label2";
@@ -83,6 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label3.Location = new System.Drawing.Point(148, 186);
             this.label3.Name = "label3";
@@ -102,6 +106,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label4.Location = new System.Drawing.Point(148, 238);
             this.label4.Name = "label4";
@@ -120,6 +125,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label5.Location = new System.Drawing.Point(148, 297);
             this.label5.Name = "label5";
@@ -137,35 +143,38 @@
             // 
             // RegBackbtn
             // 
+            this.RegBackbtn.BackColor = System.Drawing.Color.LightSalmon;
             this.RegBackbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.RegBackbtn.Location = new System.Drawing.Point(153, 394);
             this.RegBackbtn.Name = "RegBackbtn";
             this.RegBackbtn.Size = new System.Drawing.Size(103, 34);
             this.RegBackbtn.TabIndex = 10;
             this.RegBackbtn.Text = "Back";
-            this.RegBackbtn.UseVisualStyleBackColor = true;
+            this.RegBackbtn.UseVisualStyleBackColor = false;
             this.RegBackbtn.Click += new System.EventHandler(this.RegBackbtn_Click);
             // 
             // RegOkbtn
             // 
+            this.RegOkbtn.BackColor = System.Drawing.Color.LightSalmon;
             this.RegOkbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.RegOkbtn.Location = new System.Drawing.Point(532, 394);
             this.RegOkbtn.Name = "RegOkbtn";
             this.RegOkbtn.Size = new System.Drawing.Size(103, 34);
             this.RegOkbtn.TabIndex = 11;
             this.RegOkbtn.Text = "Ok";
-            this.RegOkbtn.UseVisualStyleBackColor = true;
+            this.RegOkbtn.UseVisualStyleBackColor = false;
             this.RegOkbtn.Click += new System.EventHandler(this.RegOkbtn_Click);
             // 
             // RegLoginbtn
             // 
+            this.RegLoginbtn.BackColor = System.Drawing.Color.LightSalmon;
             this.RegLoginbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.RegLoginbtn.Location = new System.Drawing.Point(345, 394);
             this.RegLoginbtn.Name = "RegLoginbtn";
             this.RegLoginbtn.Size = new System.Drawing.Size(103, 34);
             this.RegLoginbtn.TabIndex = 12;
             this.RegLoginbtn.Text = "Login";
-            this.RegLoginbtn.UseVisualStyleBackColor = true;
+            this.RegLoginbtn.UseVisualStyleBackColor = false;
             this.RegLoginbtn.Click += new System.EventHandler(this.RegLoginbtn_Click);
             // 
             // frmRegister
@@ -173,6 +182,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.RegLoginbtn);
             this.Controls.Add(this.RegOkbtn);
@@ -187,6 +198,7 @@
             this.Controls.Add(this.txtmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtname);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegister";
             this.Text = "Register";
             this.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfile));
             this.btnupdate = new System.Windows.Forms.Button();
             this.ProfBackbtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,28 +46,31 @@
             // 
             // btnupdate
             // 
+            this.btnupdate.BackColor = System.Drawing.Color.LightSalmon;
             this.btnupdate.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.btnupdate.Location = new System.Drawing.Point(481, 369);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(103, 34);
             this.btnupdate.TabIndex = 24;
             this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.UseVisualStyleBackColor = false;
             // 
             // ProfBackbtn
             // 
+            this.ProfBackbtn.BackColor = System.Drawing.Color.LightSalmon;
             this.ProfBackbtn.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.ProfBackbtn.Location = new System.Drawing.Point(181, 369);
             this.ProfBackbtn.Name = "ProfBackbtn";
             this.ProfBackbtn.Size = new System.Drawing.Size(103, 34);
             this.ProfBackbtn.TabIndex = 23;
             this.ProfBackbtn.Text = "Back";
-            this.ProfBackbtn.UseVisualStyleBackColor = true;
+            this.ProfBackbtn.UseVisualStyleBackColor = false;
             this.ProfBackbtn.Click += new System.EventHandler(this.ProfBackbtn_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label5.Location = new System.Drawing.Point(176, 297);
             this.label5.Name = "label5";
@@ -85,6 +89,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label4.Location = new System.Drawing.Point(176, 238);
             this.label4.Name = "label4";
@@ -103,6 +108,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.label3.Location = new System.Drawing.Point(176, 186);
             this.label3.Name = "label3";
@@ -121,6 +127,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(176, 132);
             this.label2.Name = "label2";
@@ -140,6 +147,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(175, 72);
             this.label1.Name = "label1";
@@ -157,13 +165,14 @@
             // 
             // btnlogout
             // 
+            this.btnlogout.BackColor = System.Drawing.Color.LightSalmon;
             this.btnlogout.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.btnlogout.Location = new System.Drawing.Point(681, 12);
             this.btnlogout.Name = "btnlogout";
             this.btnlogout.Size = new System.Drawing.Size(107, 34);
             this.btnlogout.TabIndex = 25;
             this.btnlogout.Text = "Logout";
-            this.btnlogout.UseVisualStyleBackColor = true;
+            this.btnlogout.UseVisualStyleBackColor = false;
             this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
             // 
             // frmProfile
@@ -171,6 +180,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnlogout);
             this.Controls.Add(this.btnupdate);
@@ -185,6 +196,7 @@
             this.Controls.Add(this.TBprofemail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TBprofname);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmProfile";
             this.Text = "Profile";
             this.ResumeLayout(false);
