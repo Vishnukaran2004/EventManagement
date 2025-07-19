@@ -62,20 +62,11 @@
             // 
             this.cbtitle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbtitle.FormattingEnabled = true;
-            this.cbtitle.Items.AddRange(new object[] {
-            "GHOSTY RYDER",
-            "ZOMBIE AND 4 IDIOTS",
-            "APE LANKA 2",
-            "JANA NAYAKAYA",
-            "AI BABY",
-            "MUSHROOM",
-            "SHI - YAM",
-            "CAMATHAAR",
-            "THE POLICE AND CREW"});
             this.cbtitle.Location = new System.Drawing.Point(278, 69);
             this.cbtitle.Name = "cbtitle";
             this.cbtitle.Size = new System.Drawing.Size(308, 31);
             this.cbtitle.TabIndex = 1;
+            this.cbtitle.SelectedIndexChanged += new System.EventHandler(this.cbtitle_SelectedIndexChanged);
             // 
             // label3
             // 
