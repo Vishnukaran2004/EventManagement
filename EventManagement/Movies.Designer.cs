@@ -42,6 +42,8 @@
             // 
             // btncam
             // 
+            this.btncam.BackgroundImage = global::EventManagement.Properties.Resources.e3dee7c0_4916_4aa9_b5f9_3f1a2dd21a05;
+            this.btncam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncam.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncam.Location = new System.Drawing.Point(96, 92);
             this.btncam.Name = "btncam";

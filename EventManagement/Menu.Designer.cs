@@ -61,7 +61,7 @@
             this.aboutUsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(894, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(894, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -135,6 +135,8 @@
             // 
             // btncam
             // 
+            this.btncam.BackgroundImage = global::EventManagement.Properties.Resources.e3dee7c0_4916_4aa9_b5f9_3f1a2dd21a05;
+            this.btncam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncam.Location = new System.Drawing.Point(62, 54);
             this.btncam.Name = "btncam";
             this.btncam.Size = new System.Drawing.Size(261, 164);
