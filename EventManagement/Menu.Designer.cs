@@ -43,9 +43,9 @@
             this.btnmushroom = new System.Windows.Forms.Button();
             this.btncyum = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btncon2 = new System.Windows.Forms.Button();
             this.btncon3 = new System.Windows.Forms.Button();
             this.btncon1 = new System.Windows.Forms.Button();
-            this.btncon2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -61,7 +61,7 @@
             this.aboutUsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(894, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(894, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,14 +77,14 @@
             // moviesToolStripMenuItem
             // 
             this.moviesToolStripMenuItem.Name = "moviesToolStripMenuItem";
-            this.moviesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.moviesToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
             this.moviesToolStripMenuItem.Text = "Movies";
             this.moviesToolStripMenuItem.Click += new System.EventHandler(this.moviesToolStripMenuItem_Click);
             // 
             // concertsToolStripMenuItem
             // 
             this.concertsToolStripMenuItem.Name = "concertsToolStripMenuItem";
-            this.concertsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.concertsToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
             this.concertsToolStripMenuItem.Text = "Concerts";
             this.concertsToolStripMenuItem.Click += new System.EventHandler(this.concertsToolStripMenuItem_Click);
             // 
@@ -135,11 +135,11 @@
             // 
             // btncam
             // 
-            this.btncam.Location = new System.Drawing.Point(133, 54);
+            this.btncam.Location = new System.Drawing.Point(62, 54);
             this.btncam.Name = "btncam";
-            this.btncam.Size = new System.Drawing.Size(122, 129);
+            this.btncam.Size = new System.Drawing.Size(261, 164);
             this.btncam.TabIndex = 1;
-            this.btncam.Text = "Cammathar";
+            this.btncam.Text = "CAMATHAR";
             this.btncam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncam.UseVisualStyleBackColor = true;
             this.btncam.Click += new System.EventHandler(this.btncam_Click);
@@ -161,20 +161,20 @@
             // 
             this.btnmushroom.Location = new System.Drawing.Point(655, 54);
             this.btnmushroom.Name = "btnmushroom";
-            this.btnmushroom.Size = new System.Drawing.Size(122, 129);
+            this.btnmushroom.Size = new System.Drawing.Size(218, 164);
             this.btnmushroom.TabIndex = 3;
-            this.btnmushroom.Text = "Mushroom";
+            this.btnmushroom.Text = "MUSHROOM";
             this.btnmushroom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmushroom.UseVisualStyleBackColor = true;
             this.btnmushroom.Click += new System.EventHandler(this.btnmushroom_Click);
             // 
             // btncyum
             // 
-            this.btncyum.Location = new System.Drawing.Point(382, 54);
+            this.btncyum.Location = new System.Drawing.Point(366, 54);
             this.btncyum.Name = "btncyum";
-            this.btncyum.Size = new System.Drawing.Size(122, 129);
+            this.btncyum.Size = new System.Drawing.Size(240, 164);
             this.btncyum.TabIndex = 2;
-            this.btncyum.Text = "SHI - YAM";
+            this.btncyum.Text = "C  YUM";
             this.btncyum.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncyum.UseVisualStyleBackColor = true;
             this.btncyum.Click += new System.EventHandler(this.btncyum_Click);
@@ -192,11 +192,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Events";
             // 
+            // btncon2
+            // 
+            this.btncon2.Location = new System.Drawing.Point(409, 37);
+            this.btncon2.Name = "btncon2";
+            this.btncon2.Size = new System.Drawing.Size(166, 169);
+            this.btncon2.TabIndex = 3;
+            this.btncon2.Text = "MENIKE";
+            this.btncon2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btncon2.UseVisualStyleBackColor = true;
+            this.btncon2.Click += new System.EventHandler(this.btncon2_Click);
+            // 
             // btncon3
             // 
-            this.btncon3.Location = new System.Drawing.Point(655, 37);
+            this.btncon3.Location = new System.Drawing.Point(678, 37);
             this.btncon3.Name = "btncon3";
-            this.btncon3.Size = new System.Drawing.Size(122, 129);
+            this.btncon3.Size = new System.Drawing.Size(164, 169);
             this.btncon3.TabIndex = 2;
             this.btncon3.Text = "SL vs Ban T20";
             this.btncon3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -207,23 +218,12 @@
             // 
             this.btncon1.Location = new System.Drawing.Point(133, 37);
             this.btncon1.Name = "btncon1";
-            this.btncon1.Size = new System.Drawing.Size(122, 129);
+            this.btncon1.Size = new System.Drawing.Size(166, 169);
             this.btncon1.TabIndex = 1;
             this.btncon1.Text = "VIBE ANTONY";
             this.btncon1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncon1.UseVisualStyleBackColor = true;
             this.btncon1.Click += new System.EventHandler(this.btncon1_Click);
-            // 
-            // btncon2
-            // 
-            this.btncon2.Location = new System.Drawing.Point(382, 37);
-            this.btncon2.Name = "btncon2";
-            this.btncon2.Size = new System.Drawing.Size(122, 129);
-            this.btncon2.TabIndex = 3;
-            this.btncon2.Text = "MENIKE";
-            this.btncon2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btncon2.UseVisualStyleBackColor = true;
-            this.btncon2.Click += new System.EventHandler(this.btncon2_Click);
             // 
             // Menu
             // 
