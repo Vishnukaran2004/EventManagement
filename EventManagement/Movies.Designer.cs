@@ -46,11 +46,11 @@
             this.btncam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncam.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btncam.Location = new System.Drawing.Point(96, 92);
+            this.btncam.Location = new System.Drawing.Point(59, 26);
             this.btncam.Name = "btncam";
-            this.btncam.Size = new System.Drawing.Size(189, 137);
+            this.btncam.Size = new System.Drawing.Size(174, 166);
             this.btncam.TabIndex = 0;
-            this.btncam.Text = "CAMATHAAR";
+            this.btncam.Text = "CAMATHAR";
             this.btncam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncam.UseVisualStyleBackColor = true;
             this.btncam.Click += new System.EventHandler(this.btncam_Click);
@@ -58,9 +58,9 @@
             // btnshi
             // 
             this.btnshi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnshi.Location = new System.Drawing.Point(336, 92);
+            this.btnshi.Location = new System.Drawing.Point(282, 26);
             this.btnshi.Name = "btnshi";
-            this.btnshi.Size = new System.Drawing.Size(189, 137);
+            this.btnshi.Size = new System.Drawing.Size(161, 166);
             this.btnshi.TabIndex = 2;
             this.btnshi.Text = "C  YUM";
             this.btnshi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -70,9 +70,9 @@
             // btnmush
             // 
             this.btnmush.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmush.Location = new System.Drawing.Point(576, 92);
+            this.btnmush.Location = new System.Drawing.Point(508, 26);
             this.btnmush.Name = "btnmush";
-            this.btnmush.Size = new System.Drawing.Size(189, 137);
+            this.btnmush.Size = new System.Drawing.Size(152, 154);
             this.btnmush.TabIndex = 3;
             this.btnmush.Text = "MUSHROOM";
             this.btnmush.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -82,9 +82,9 @@
             // btnai
             // 
             this.btnai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnai.Location = new System.Drawing.Point(96, 241);
+            this.btnai.Location = new System.Drawing.Point(59, 214);
             this.btnai.Name = "btnai";
-            this.btnai.Size = new System.Drawing.Size(189, 137);
+            this.btnai.Size = new System.Drawing.Size(174, 137);
             this.btnai.TabIndex = 4;
             this.btnai.Text = "AI BABY";
             this.btnai.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -94,9 +94,9 @@
             // btnkash
             // 
             this.btnkash.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnkash.Location = new System.Drawing.Point(96, 393);
+            this.btnkash.Location = new System.Drawing.Point(59, 380);
             this.btnkash.Name = "btnkash";
-            this.btnkash.Size = new System.Drawing.Size(189, 137);
+            this.btnkash.Size = new System.Drawing.Size(174, 150);
             this.btnkash.TabIndex = 5;
             this.btnkash.Text = "ZOMBIE AND 4 IDIOTS";
             this.btnkash.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -106,9 +106,9 @@
             // btnjan
             // 
             this.btnjan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnjan.Location = new System.Drawing.Point(336, 241);
+            this.btnjan.Location = new System.Drawing.Point(282, 214);
             this.btnjan.Name = "btnjan";
-            this.btnjan.Size = new System.Drawing.Size(189, 137);
+            this.btnjan.Size = new System.Drawing.Size(161, 137);
             this.btnjan.TabIndex = 6;
             this.btnjan.Text = "JANA NAYAKAYA";
             this.btnjan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -118,9 +118,9 @@
             // btnloc
             // 
             this.btnloc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnloc.Location = new System.Drawing.Point(336, 393);
+            this.btnloc.Location = new System.Drawing.Point(282, 380);
             this.btnloc.Name = "btnloc";
-            this.btnloc.Size = new System.Drawing.Size(189, 137);
+            this.btnloc.Size = new System.Drawing.Size(161, 150);
             this.btnloc.TabIndex = 7;
             this.btnloc.Text = "THE POLICE AND CREW";
             this.btnloc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -130,9 +130,9 @@
             // btnape
             // 
             this.btnape.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnape.Location = new System.Drawing.Point(576, 241);
+            this.btnape.Location = new System.Drawing.Point(510, 214);
             this.btnape.Name = "btnape";
-            this.btnape.Size = new System.Drawing.Size(189, 137);
+            this.btnape.Size = new System.Drawing.Size(150, 137);
             this.btnape.TabIndex = 8;
             this.btnape.Text = "APE LANKA 2";
             this.btnape.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -142,9 +142,9 @@
             // btnmoon
             // 
             this.btnmoon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmoon.Location = new System.Drawing.Point(576, 393);
+            this.btnmoon.Location = new System.Drawing.Point(510, 380);
             this.btnmoon.Name = "btnmoon";
-            this.btnmoon.Size = new System.Drawing.Size(189, 137);
+            this.btnmoon.Size = new System.Drawing.Size(150, 150);
             this.btnmoon.TabIndex = 9;
             this.btnmoon.Text = "GHOSTY RYDER";
             this.btnmoon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
