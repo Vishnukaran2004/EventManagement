@@ -45,6 +45,7 @@
             this.btncam.BackgroundImage = global::EventManagement.Properties.Resources.e3dee7c0_4916_4aa9_b5f9_3f1a2dd21a05;
             this.btncam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncam.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btncam.Location = new System.Drawing.Point(96, 92);
             this.btncam.Name = "btncam";
             this.btncam.Size = new System.Drawing.Size(189, 137);
@@ -61,7 +62,7 @@
             this.btnshi.Name = "btnshi";
             this.btnshi.Size = new System.Drawing.Size(189, 137);
             this.btnshi.TabIndex = 2;
-            this.btnshi.Text = "SHI - YAM";
+            this.btnshi.Text = "C  YUM";
             this.btnshi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnshi.UseVisualStyleBackColor = true;
             this.btnshi.Click += new System.EventHandler(this.btnshi_Click);
@@ -97,7 +98,7 @@
             this.btnkash.Name = "btnkash";
             this.btnkash.Size = new System.Drawing.Size(189, 137);
             this.btnkash.TabIndex = 5;
-            this.btnkash.Text = "KASHMIRAA";
+            this.btnkash.Text = "ZOMBIE AND 4 IDIOTS";
             this.btnkash.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnkash.UseVisualStyleBackColor = true;
             this.btnkash.Click += new System.EventHandler(this.btnkash_Click);
@@ -121,7 +122,7 @@
             this.btnloc.Name = "btnloc";
             this.btnloc.Size = new System.Drawing.Size(189, 137);
             this.btnloc.TabIndex = 7;
-            this.btnloc.Text = "LOCAL FROCK";
+            this.btnloc.Text = "THE POLICE AND CREW";
             this.btnloc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnloc.UseVisualStyleBackColor = true;
             this.btnloc.Click += new System.EventHandler(this.btnloc_Click);
@@ -145,7 +146,7 @@
             this.btnmoon.Name = "btnmoon";
             this.btnmoon.Size = new System.Drawing.Size(189, 137);
             this.btnmoon.TabIndex = 9;
-            this.btnmoon.Text = "THE MOON";
+            this.btnmoon.Text = "GHOSTY RYDER";
             this.btnmoon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmoon.UseVisualStyleBackColor = true;
             this.btnmoon.Click += new System.EventHandler(this.btnmoon_Click);
