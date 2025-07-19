@@ -39,7 +39,7 @@ namespace EventManagement
 
         private void RegOkbtn_Click(object sender, EventArgs e)
         {
-            string str = @"Data Source=DESKTOP-LJSA027;Initial Catalog=EventManagement;Integrated Security=True";
+            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             SqlConnection con = new SqlConnection(str);
             con.Open();
 
@@ -64,7 +64,7 @@ namespace EventManagement
                 else
                 {
                     // Here you can add code to save the registration details to a database or file
-                    com.Parameters.AddWithValue("@emial", this.txtmail.Text);
+                    com.Parameters.AddWithValue("@email", this.txtmail.Text);
                     com.Parameters.AddWithValue("@name", this.txtname.Text);
                     com.Parameters.AddWithValue("@pnumber", this.txtnum.Text);
                     com.Parameters.AddWithValue("@password", this.txtpass.Text);
