@@ -2,20 +2,36 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace EventManagement
 {
     public partial class Menu : Form
     {
+        
         public Menu()
         {
             InitializeComponent();
+            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+            SqlConnection con = new SqlConnection(str);
+            con.Open();
+            string sql = "SELECT * FROM userdetails WHERE email=@email";
+            SqlCommand com = new SqlCommand(sql, con);
+            com.Parameters.AddWithValue("@email", Usercred.Email);
+            SqlDataAdapter dap = new SqlDataAdapter(com);
+            DataSet ds = new DataSet();
+            dap.Fill(ds);
+            this.labelname.Text = "Welcome " + ds.Tables[0].Rows[0][1].ToString();
+            con.Close();
         }
+       
 
         private void moviesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -116,6 +132,11 @@ namespace EventManagement
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

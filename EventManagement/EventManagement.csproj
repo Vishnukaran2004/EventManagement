@@ -144,6 +144,7 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usercred.cs" />
     <Compile Include="ViewConcert.cs">
       <SubType>Form</SubType>
     </Compile>

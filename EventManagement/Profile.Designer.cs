@@ -32,15 +32,15 @@
             this.btnupdate = new System.Windows.Forms.Button();
             this.ProfBackbtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.TBprofcpass = new System.Windows.Forms.TextBox();
+            this.txtconpass = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.TBprofpass = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TBprofnum = new System.Windows.Forms.TextBox();
+            this.txtpnum = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TBprofemail = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.TBprofname = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.btnlogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -78,13 +78,13 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Confirm password";
             // 
-            // TBprofcpass
+            // txtconpass
             // 
-            this.TBprofcpass.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBprofcpass.Location = new System.Drawing.Point(395, 294);
-            this.TBprofcpass.Name = "TBprofcpass";
-            this.TBprofcpass.Size = new System.Drawing.Size(268, 34);
-            this.TBprofcpass.TabIndex = 21;
+            this.txtconpass.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtconpass.Location = new System.Drawing.Point(395, 294);
+            this.txtconpass.Name = "txtconpass";
+            this.txtconpass.Size = new System.Drawing.Size(268, 34);
+            this.txtconpass.TabIndex = 21;
             // 
             // label4
             // 
@@ -97,13 +97,13 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Password";
             // 
-            // TBprofpass
+            // txtpass
             // 
-            this.TBprofpass.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBprofpass.Location = new System.Drawing.Point(395, 235);
-            this.TBprofpass.Name = "TBprofpass";
-            this.TBprofpass.Size = new System.Drawing.Size(268, 34);
-            this.TBprofpass.TabIndex = 19;
+            this.txtpass.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtpass.Location = new System.Drawing.Point(395, 235);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(268, 34);
+            this.txtpass.TabIndex = 19;
             // 
             // label3
             // 
@@ -116,13 +116,13 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Phone number";
             // 
-            // TBprofnum
+            // txtpnum
             // 
-            this.TBprofnum.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBprofnum.Location = new System.Drawing.Point(395, 186);
-            this.TBprofnum.Name = "TBprofnum";
-            this.TBprofnum.Size = new System.Drawing.Size(268, 34);
-            this.TBprofnum.TabIndex = 17;
+            this.txtpnum.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtpnum.Location = new System.Drawing.Point(395, 186);
+            this.txtpnum.Name = "txtpnum";
+            this.txtpnum.Size = new System.Drawing.Size(268, 34);
+            this.txtpnum.TabIndex = 17;
             // 
             // label2
             // 
@@ -135,14 +135,14 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Email";
             // 
-            // TBprofemail
+            // txtemail
             // 
-            this.TBprofemail.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBprofemail.Location = new System.Drawing.Point(395, 124);
-            this.TBprofemail.Name = "TBprofemail";
-            this.TBprofemail.ReadOnly = true;
-            this.TBprofemail.Size = new System.Drawing.Size(268, 34);
-            this.TBprofemail.TabIndex = 15;
+            this.txtemail.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtemail.Location = new System.Drawing.Point(395, 124);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.ReadOnly = true;
+            this.txtemail.Size = new System.Drawing.Size(268, 34);
+            this.txtemail.TabIndex = 15;
             // 
             // label1
             // 
@@ -155,13 +155,13 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Name";
             // 
-            // TBprofname
+            // txtname
             // 
-            this.TBprofname.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.TBprofname.Location = new System.Drawing.Point(395, 72);
-            this.TBprofname.Name = "TBprofname";
-            this.TBprofname.Size = new System.Drawing.Size(268, 34);
-            this.TBprofname.TabIndex = 13;
+            this.txtname.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtname.Location = new System.Drawing.Point(395, 72);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(268, 34);
+            this.txtname.TabIndex = 13;
             // 
             // btnlogout
             // 
@@ -187,18 +187,19 @@
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.ProfBackbtn);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.TBprofcpass);
+            this.Controls.Add(this.txtconpass);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.TBprofpass);
+            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TBprofnum);
+            this.Controls.Add(this.txtpnum);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TBprofemail);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TBprofname);
+            this.Controls.Add(this.txtname);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmProfile";
             this.Text = "Profile";
+            this.Load += new System.EventHandler(this.frmProfile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,15 +208,15 @@
         #endregion
         private System.Windows.Forms.Button ProfBackbtn;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TBprofcpass;
+        private System.Windows.Forms.TextBox txtconpass;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TBprofpass;
+        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TBprofnum;
+        private System.Windows.Forms.TextBox txtpnum;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TBprofemail;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TBprofname;
+        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnlogout;
     }
