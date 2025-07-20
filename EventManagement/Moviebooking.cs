@@ -142,9 +142,10 @@ namespace EventManagement
 
                     int ret = com.ExecuteNonQuery();
                 MessageBox.Show("Booking Successful!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Usercred.title = cbtitle.SelectedItem.ToString();
+                Usercred.title = cbtitle.Text;
+                int amount = int.Parse(txtprice.Text);
                 this.Hide();
-                Payment payment = new Payment();
+                Payment payment = new Payment(amount);
                 payment.Show();
                 return;
             }

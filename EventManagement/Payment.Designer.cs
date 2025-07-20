@@ -107,6 +107,7 @@
             this.cmbadd.Name = "cmbadd";
             this.cmbadd.Size = new System.Drawing.Size(253, 37);
             this.cmbadd.TabIndex = 6;
+            this.cmbadd.SelectedIndexChanged += new System.EventHandler(this.cmbadd_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -138,6 +139,7 @@
             this.btnpay.TabIndex = 9;
             this.btnpay.Text = "Pay";
             this.btnpay.UseVisualStyleBackColor = false;
+            this.btnpay.Click += new System.EventHandler(this.btnpay_Click);
             // 
             // btnback
             // 

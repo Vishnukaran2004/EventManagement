@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace EventManagement
 {
@@ -82,7 +84,38 @@ namespace EventManagement
 
         private void btnbook_Click(object sender, EventArgs e)
         {
+            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+            SqlConnection con = new SqlConnection(str);
+            con.Open();
 
+            string sql = "INSERT INTO concertbooking(email,title,seats,type,price)VALUES(@email,@title,@seats,@type,@price)";
+            SqlCommand com = new SqlCommand(sql, con);
+
+
+            if (string.IsNullOrEmpty(cbtitle.Text) || string.IsNullOrEmpty(txtvenue.Text) || numseat.Value == 0 || (rbgen.Checked == false && rbvip.Checked == false && rbvvip.Checked == false))
+            {
+                MessageBox.Show("Please fill all the fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                // Here you can add code to save the registration details to a database or file
+                com.Parameters.AddWithValue("@email", Usercred.Email);
+                com.Parameters.AddWithValue("@title", this.cbtitle.Text);
+                com.Parameters.AddWithValue("@seats", this.numseat.Value);
+                com.Parameters.AddWithValue("@type", this.rbgen.Checked ? "General" : this.rbvip.Checked ? "VIP" : "VVIP");
+                com.Parameters.AddWithValue("@price", this.txtprice.Text);
+                // Execute the command
+
+                int ret = com.ExecuteNonQuery();
+                MessageBox.Show("Booking Successful!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Usercred.title = cbtitle.Text;
+                int amount= int.Parse(txtprice.Text);
+                this.Hide();
+                Payment payment = new Payment(amount);
+                payment.Show();
+                return;
+            }
         }
 
         private void Concertbooking_Load(object sender, EventArgs e)
