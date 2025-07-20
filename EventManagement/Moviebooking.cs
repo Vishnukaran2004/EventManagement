@@ -121,7 +121,12 @@ namespace EventManagement
             }
             else
             {
-
+                MessageBox.Show("Booking Successful!", "Successful", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                Usercred.title = cbtitle.SelectedItem.ToString();
+                this.Hide();
+                Payment payment = new Payment();
+                payment.Show();
+                return;
             }
         }
 

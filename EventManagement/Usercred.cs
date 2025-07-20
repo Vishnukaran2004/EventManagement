@@ -9,6 +9,7 @@ namespace EventManagement
     public static class Usercred
     {
         public static string Email { get; set; }
+        public static string title{ get; set; }
 
     }
 }
