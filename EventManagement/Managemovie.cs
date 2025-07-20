@@ -62,5 +62,23 @@ namespace EventManagement
                 }
             }
         }
+
+        private void Managemovie_Load(object sender, EventArgs e)
+        {
+            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+            SqlConnection con = new SqlConnection(str);
+            con.Open();
+
+            string sql = "SELECT * FROM moviedetails";
+            SqlCommand com = new SqlCommand(sql, con);
+
+            //data adapter
+            SqlDataAdapter dap = new SqlDataAdapter(com);
+            DataSet ds = new DataSet();
+            dap.Fill(ds);
+            this.dataGridView1.DataSource = ds.Tables[0];
+
+            con.Close();
+        }
     }
 }

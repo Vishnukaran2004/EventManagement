@@ -31,19 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Concertbooking));
             this.btncancel = new System.Windows.Forms.Button();
             this.btnbook = new System.Windows.Forms.Button();
-            this.txtpri = new System.Windows.Forms.TextBox();
+            this.txtprice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.datetymcon = new System.Windows.Forms.DateTimePicker();
             this.numseat = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbcon = new System.Windows.Forms.ComboBox();
+            this.cbtitle = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.rbgen = new System.Windows.Forms.RadioButton();
             this.rbvvip = new System.Windows.Forms.RadioButton();
             this.rbvip = new System.Windows.Forms.RadioButton();
             this.btnmenu = new System.Windows.Forms.Button();
+            this.txtvenue = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numseat)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,22 +71,23 @@
             this.btnbook.TabIndex = 26;
             this.btnbook.Text = "Book";
             this.btnbook.UseVisualStyleBackColor = false;
+            this.btnbook.Click += new System.EventHandler(this.btnbook_Click);
             // 
-            // txtpri
+            // txtprice
             // 
-            this.txtpri.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpri.Location = new System.Drawing.Point(325, 283);
-            this.txtpri.Name = "txtpri";
-            this.txtpri.ReadOnly = true;
-            this.txtpri.Size = new System.Drawing.Size(244, 34);
-            this.txtpri.TabIndex = 25;
+            this.txtprice.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtprice.Location = new System.Drawing.Point(325, 290);
+            this.txtprice.Name = "txtprice";
+            this.txtprice.ReadOnly = true;
+            this.txtprice.Size = new System.Drawing.Size(244, 34);
+            this.txtprice.TabIndex = 25;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(84, 288);
+            this.label5.Location = new System.Drawing.Point(84, 295);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 26);
             this.label5.TabIndex = 24;
@@ -95,17 +98,17 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 226);
+            this.label4.Location = new System.Drawing.Point(84, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 26);
+            this.label4.Size = new System.Drawing.Size(68, 26);
             this.label4.TabIndex = 23;
-            this.label4.Text = "DATE /TIME";
+            this.label4.Text = "DATE";
             // 
             // datetymcon
             // 
             this.datetymcon.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetymcon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datetymcon.Location = new System.Drawing.Point(325, 231);
+            this.datetymcon.Location = new System.Drawing.Point(325, 98);
             this.datetymcon.Name = "datetymcon";
             this.datetymcon.Size = new System.Drawing.Size(200, 34);
             this.datetymcon.TabIndex = 22;
@@ -113,7 +116,7 @@
             // numseat
             // 
             this.numseat.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numseat.Location = new System.Drawing.Point(325, 109);
+            this.numseat.Location = new System.Drawing.Point(325, 201);
             this.numseat.Name = "numseat";
             this.numseat.Size = new System.Drawing.Size(129, 34);
             this.numseat.TabIndex = 21;
@@ -122,37 +125,30 @@
             0,
             0,
             0});
+            this.numseat.ValueChanged += new System.EventHandler(this.numseat_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(84, 109);
+            this.label3.Location = new System.Drawing.Point(84, 201);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 26);
             this.label3.TabIndex = 20;
             this.label3.Text = "SEATS";
             // 
-            // cbcon
+            // cbtitle
             // 
-            this.cbcon.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbcon.FormattingEnabled = true;
-            this.cbcon.Items.AddRange(new object[] {
-            "RETURN OF DRAGON",
-            "HUKUM",
-            "ARR LIVE",
-            "MAESTRO RAJA",
-            "BLUE DIAMOND",
-            "MENIKE",
-            "HARRIS ALIVE",
-            "VIBE ANTONY",
-            "SL vs BAN",
-            "RUGBY"});
-            this.cbcon.Location = new System.Drawing.Point(325, 41);
-            this.cbcon.Name = "cbcon";
-            this.cbcon.Size = new System.Drawing.Size(244, 34);
-            this.cbcon.TabIndex = 15;
+            this.cbtitle.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbtitle.FormattingEnabled = true;
+            this.cbtitle.Items.AddRange(new object[] {
+            ""});
+            this.cbtitle.Location = new System.Drawing.Point(325, 41);
+            this.cbtitle.Name = "cbtitle";
+            this.cbtitle.Size = new System.Drawing.Size(244, 34);
+            this.cbtitle.TabIndex = 15;
+            this.cbtitle.SelectedIndexChanged += new System.EventHandler(this.cbtitle_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -170,7 +166,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(84, 164);
+            this.label2.Location = new System.Drawing.Point(84, 242);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 26);
             this.label2.TabIndex = 28;
@@ -181,33 +177,35 @@
             this.rbgen.AutoSize = true;
             this.rbgen.BackColor = System.Drawing.Color.Transparent;
             this.rbgen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbgen.Location = new System.Drawing.Point(325, 171);
+            this.rbgen.Location = new System.Drawing.Point(325, 249);
             this.rbgen.Name = "rbgen";
             this.rbgen.Size = new System.Drawing.Size(121, 26);
             this.rbgen.TabIndex = 29;
             this.rbgen.TabStop = true;
             this.rbgen.Text = "GENERAL";
             this.rbgen.UseVisualStyleBackColor = false;
+            this.rbgen.CheckedChanged += new System.EventHandler(this.rbgen_CheckedChanged);
             // 
             // rbvvip
             // 
             this.rbvvip.AutoSize = true;
             this.rbvvip.BackColor = System.Drawing.Color.Transparent;
             this.rbvvip.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbvvip.Location = new System.Drawing.Point(544, 170);
+            this.rbvvip.Location = new System.Drawing.Point(543, 249);
             this.rbvvip.Name = "rbvvip";
             this.rbvvip.Size = new System.Drawing.Size(74, 26);
             this.rbvvip.TabIndex = 30;
             this.rbvvip.TabStop = true;
             this.rbvvip.Text = "VVIP";
             this.rbvvip.UseVisualStyleBackColor = false;
+            this.rbvvip.CheckedChanged += new System.EventHandler(this.rbvvip_CheckedChanged);
             // 
             // rbvip
             // 
             this.rbvip.AutoSize = true;
             this.rbvip.BackColor = System.Drawing.Color.Transparent;
             this.rbvip.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbvip.Location = new System.Drawing.Point(460, 171);
+            this.rbvip.Location = new System.Drawing.Point(460, 249);
             this.rbvip.Name = "rbvip";
             this.rbvip.Size = new System.Drawing.Size(61, 26);
             this.rbvip.TabIndex = 31;
@@ -228,6 +226,26 @@
             this.btnmenu.UseVisualStyleBackColor = false;
             this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
+            // txtvenue
+            // 
+            this.txtvenue.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtvenue.Location = new System.Drawing.Point(325, 147);
+            this.txtvenue.Name = "txtvenue";
+            this.txtvenue.ReadOnly = true;
+            this.txtvenue.Size = new System.Drawing.Size(244, 34);
+            this.txtvenue.TabIndex = 34;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(84, 152);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 26);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Venue";
+            // 
             // Concertbooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -236,6 +254,8 @@
             this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtvenue);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnmenu);
             this.Controls.Add(this.rbvip);
             this.Controls.Add(this.rbvvip);
@@ -243,17 +263,18 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnbook);
-            this.Controls.Add(this.txtpri);
+            this.Controls.Add(this.txtprice);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.datetymcon);
             this.Controls.Add(this.numseat);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbcon);
+            this.Controls.Add(this.cbtitle);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Concertbooking";
             this.Text = "Concertbooking";
+            this.Load += new System.EventHandler(this.Concertbooking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numseat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -264,18 +285,20 @@
 
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Button btnbook;
-        private System.Windows.Forms.TextBox txtpri;
+        private System.Windows.Forms.TextBox txtprice;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker datetymcon;
         private System.Windows.Forms.NumericUpDown numseat;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbcon;
+        private System.Windows.Forms.ComboBox cbtitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton rbgen;
         private System.Windows.Forms.RadioButton rbvvip;
         private System.Windows.Forms.RadioButton rbvip;
         private System.Windows.Forms.Button btnmenu;
+        private System.Windows.Forms.TextBox txtvenue;
+        private System.Windows.Forms.Label label6;
     }
 }
