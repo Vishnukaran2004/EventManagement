@@ -38,8 +38,10 @@
             this.txtamount = new System.Windows.Forms.TextBox();
             this.btnpay = new System.Windows.Forms.Button();
             this.btnback = new System.Windows.Forms.Button();
-            this.txtname = new System.Windows.Forms.TextBox();
+            this.txtmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtevent = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -96,6 +98,7 @@
             this.cmbadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.cmbadd.FormattingEnabled = true;
             this.cmbadd.Items.AddRange(new object[] {
+            "NONE",
             "POPCORNS",
             "SHORT - EATS",
             "SOFT DRINKS",
@@ -148,25 +151,45 @@
             this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
-            // txtname
+            // txtmail
             // 
-            this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.txtname.Location = new System.Drawing.Point(385, 122);
-            this.txtname.Name = "txtname";
-            this.txtname.ReadOnly = true;
-            this.txtname.Size = new System.Drawing.Size(290, 34);
-            this.txtname.TabIndex = 12;
+            this.txtmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtmail.Location = new System.Drawing.Point(385, 83);
+            this.txtmail.Name = "txtmail";
+            this.txtmail.ReadOnly = true;
+            this.txtmail.Size = new System.Drawing.Size(290, 34);
+            this.txtmail.TabIndex = 12;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(90, 122);
+            this.label5.Location = new System.Drawing.Point(90, 83);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 26);
+            this.label5.Size = new System.Drawing.Size(65, 26);
             this.label5.TabIndex = 11;
-            this.label5.Text = "NAME";
+            this.label5.Text = "Email";
+            // 
+            // txtevent
+            // 
+            this.txtevent.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtevent.Location = new System.Drawing.Point(385, 136);
+            this.txtevent.Name = "txtevent";
+            this.txtevent.ReadOnly = true;
+            this.txtevent.Size = new System.Drawing.Size(290, 34);
+            this.txtevent.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(90, 136);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 26);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Event";
             // 
             // Payment
             // 
@@ -176,7 +199,9 @@
             this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtname);
+            this.Controls.Add(this.txtevent);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtmail);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.btnpay);
@@ -190,6 +215,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Payment";
             this.Text = "Payment";
+            this.Load += new System.EventHandler(this.Payment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,7 +231,9 @@
         private System.Windows.Forms.TextBox txtamount;
         private System.Windows.Forms.Button btnpay;
         private System.Windows.Forms.Button btnback;
-        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txtmail;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtevent;
+        private System.Windows.Forms.Label label1;
     }
 }

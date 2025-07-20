@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EventManagement
@@ -114,20 +115,41 @@ namespace EventManagement
 
         private void btnbook_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(cbtime.Text) || string.IsNullOrEmpty(cbtitle.Text) ||string.IsNullOrEmpty(txtgenere.Text)||numseat.Value==0||( rbodc.Checked == false && rbbalcony.Checked == false && rblux.Checked == false))
+            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+            SqlConnection con = new SqlConnection(str);
+            con.Open();
+
+            string sql = "INSERT INTO moviebooking(email,title,date,show,seattype,seats,price)VALUES(@email,@title,@date,@show,@seattype,@seats,@price)";
+            SqlCommand com = new SqlCommand(sql, con);
+
+
+            if (string.IsNullOrEmpty(cbtime.Text) || string.IsNullOrEmpty(cbtitle.Text) || string.IsNullOrEmpty(txtgenere.Text) || numseat.Value == 0 || (rbodc.Checked == false && rbbalcony.Checked == false && rblux.Checked == false))
             {
-                MessageBox.Show("Please fill all the fields.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Please fill all the fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
             {
-                MessageBox.Show("Booking Successful!", "Successful", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    // Here you can add code to save the registration details to a database or file
+                    com.Parameters.AddWithValue("@email", Usercred.Email);
+                    com.Parameters.AddWithValue("@title", this.cbtitle.Text);
+                    com.Parameters.AddWithValue("@date", this.datebk.Value.Date);
+                    com.Parameters.AddWithValue("@show", this.cbtime.Text);
+                    com.Parameters.AddWithValue("@seattype", this.rbodc.Checked ? "ODC" : this.rbbalcony.Checked ? "Balcony" : "Luxury");
+                    com.Parameters.AddWithValue("@seats", this.numseat.Value);
+                    com.Parameters.AddWithValue("@price", this.txtprice.Text);
+                // Execute the command
+
+                    int ret = com.ExecuteNonQuery();
+                MessageBox.Show("Booking Successful!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Usercred.title = cbtitle.SelectedItem.ToString();
                 this.Hide();
                 Payment payment = new Payment();
                 payment.Show();
                 return;
             }
+
+
         }
 
         private void numseat_ValueChanged(object sender, EventArgs e)

@@ -29,6 +29,9 @@ namespace EventManagement
             menu.Show();
         }
 
-       
+        private void Payment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

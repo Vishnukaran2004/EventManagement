@@ -33,7 +33,7 @@
             this.cbtitle = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.numseat = new System.Windows.Forms.NumericUpDown();
-            this.date = new System.Windows.Forms.DateTimePicker();
+            this.datebk = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtprice = new System.Windows.Forms.TextBox();
@@ -97,14 +97,14 @@
             0});
             this.numseat.ValueChanged += new System.EventHandler(this.numseat_ValueChanged);
             // 
-            // date
+            // datebk
             // 
-            this.date.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date.Location = new System.Drawing.Point(278, 186);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(308, 30);
-            this.date.TabIndex = 8;
+            this.datebk.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datebk.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datebk.Location = new System.Drawing.Point(278, 186);
+            this.datebk.Name = "datebk";
+            this.datebk.Size = new System.Drawing.Size(308, 30);
+            this.datebk.TabIndex = 8;
             // 
             // label4
             // 
@@ -298,7 +298,7 @@
             this.Controls.Add(this.txtprice);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.date);
+            this.Controls.Add(this.datebk);
             this.Controls.Add(this.numseat);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbtitle);
@@ -319,7 +319,7 @@
         private System.Windows.Forms.ComboBox cbtitle;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numseat;
-        private System.Windows.Forms.DateTimePicker date;
+        private System.Windows.Forms.DateTimePicker datebk;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtprice;

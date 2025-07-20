@@ -78,5 +78,10 @@ namespace EventManagement
             }
             con.Close();
         }
+
+        private void frmRegister_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
