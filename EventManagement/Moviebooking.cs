@@ -31,6 +31,24 @@ namespace EventManagement
                 cbtitle.DataSource = dt;
             }
         }
+        public int getprice()
+        {
+            int price = 0;
+            if (rbodc.Checked)
+            {
+                price = 500;
+            }
+            else if (rbbalcony.Checked)
+            {
+                price = 1000;
+            }
+            else if (rblux.Checked)
+            {
+                price = 2000;
+            }
+            price = price * (int)numseat.Value;
+            return price;
+        }
         public Moviebooking(String title)
         {
             InitializeComponent();
@@ -55,7 +73,8 @@ namespace EventManagement
 
         private void Moviebooking_Load(object sender, EventArgs e)
         {
-           // LoadMovies();
+            int price = getprice(); 
+            txtprice.Text=price.ToString();
         }
 
         private void btncancel_Click(object sender, EventArgs e)
@@ -91,6 +110,43 @@ namespace EventManagement
                 }
                 reader.Close();
             }
+        }
+
+        private void btnbook_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(cbtime.Text) || string.IsNullOrEmpty(cbtitle.Text) ||string.IsNullOrEmpty(txtgenere.Text)||numseat.Value==0||( rbodc.Checked == false && rbbalcony.Checked == false && rblux.Checked == false))
+            {
+                MessageBox.Show("Please fill all the fields.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+
+            }
+        }
+
+        private void numseat_ValueChanged(object sender, EventArgs e)
+        {
+            int price = getprice();
+            txtprice.Text = price.ToString();
+        }
+
+        private void rbodc_CheckedChanged(object sender, EventArgs e)
+        {
+            int price = getprice();
+            txtprice.Text = price.ToString();
+        }
+
+        private void rbbalcony_CheckedChanged(object sender, EventArgs e)
+        {
+            int price = getprice();
+            txtprice.Text = price.ToString();
+        }
+
+        private void rblux_CheckedChanged(object sender, EventArgs e)
+        {
+            int price = getprice();
+            txtprice.Text = price.ToString();
         }
     }
 }
