@@ -64,7 +64,7 @@ namespace EventManagement
                 }
                 else
                 {
-                    // Here you can add code to save the registration details to a database or file
+                 
                     com.Parameters.AddWithValue("@email", this.txtmail.Text);
                     com.Parameters.AddWithValue("@name", this.txtname.Text);
                     com.Parameters.AddWithValue("@pnumber", this.txtnum.Text);

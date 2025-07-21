@@ -25,11 +25,11 @@ namespace EventManagement
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
-
-                string query = "SELECT COUNT(*) FROM userdetails"; // or your table name
+                
+                string query = "SELECT COUNT(*) FROM userdetails"; 
                 SqlCommand cmd = new SqlCommand(query, conn);
 
-                totalRows = (int)cmd.ExecuteScalar(); // Get the single count value
+                totalRows = (int)cmd.ExecuteScalar(); 
                 txtuser.Text = totalRows.ToString();
             }
         }

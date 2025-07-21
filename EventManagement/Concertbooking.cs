@@ -99,14 +99,12 @@ namespace EventManagement
             }
             else
             {
-                // Here you can add code to save the registration details to a database or file
-                com.Parameters.AddWithValue("@email", Usercred.Email);
+               com.Parameters.AddWithValue("@email", Usercred.Email);
                 com.Parameters.AddWithValue("@title", this.cbtitle.Text);
                 com.Parameters.AddWithValue("@seats", this.numseat.Value);
                 com.Parameters.AddWithValue("@type", this.rbgen.Checked ? "General" : this.rbvip.Checked ? "VIP" : "VVIP");
                 com.Parameters.AddWithValue("@price", this.txtprice.Text);
-                // Execute the command
-
+               
                 int ret = com.ExecuteNonQuery();
                 MessageBox.Show("Booking Successful!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Usercred.title = cbtitle.Text;

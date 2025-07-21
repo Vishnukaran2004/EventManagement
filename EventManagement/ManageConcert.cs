@@ -82,16 +82,16 @@ namespace EventManagement
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Ensure it's not the heade  bcr row
+
             if (e.RowIndex >= 0)
             {
-                // Get the entire row
+
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
 
-                // Get values from specific cells
-                txttitle.Text = row.Cells["title"].Value.ToString();         // using column name
-                dateTimePicker1.Text = row.Cells[1].Value.ToString();               // or by column index
-                txtvenue.Text = row.Cells["venue"].Value.ToString();  // convert to 
+
+                txttitle.Text = row.Cells["title"].Value.ToString();         
+                dateTimePicker1.Text = row.Cells[1].Value.ToString();
+                txtvenue.Text = row.Cells["venue"].Value.ToString();
             }
         }
 

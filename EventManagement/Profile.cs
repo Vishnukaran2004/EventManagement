@@ -72,7 +72,7 @@ namespace EventManagement
                 string query = "UPDATE userdetails SET name= @name , pnumber=@pnumber ,password=@password WHERE email = @email";
                 SqlCommand cmd = new SqlCommand(query, conn);
 
-                // Add parameters
+               
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@pnumber", tpno);
@@ -84,7 +84,7 @@ namespace EventManagement
                 {
                     MessageBox.Show("Password doesn't match","Error");
                 }
-                int rows = cmd.ExecuteNonQuery(); // returns number of rows affected
+                int rows = cmd.ExecuteNonQuery(); 
 
                 if (rows > 0)
                     MessageBox.Show("Profile updated successfully!");

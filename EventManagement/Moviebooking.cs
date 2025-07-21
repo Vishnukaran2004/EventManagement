@@ -28,7 +28,7 @@ namespace EventManagement
                 da.Fill(dt);
 
                 cbtitle.DisplayMember = "title";
-                cbtitle.ValueMember = "title"; // both are Title
+                cbtitle.ValueMember = "title"; 
                 cbtitle.DataSource = dt;
             }
         }
@@ -128,7 +128,7 @@ namespace EventManagement
             }
             else
             {
-                    // Here you can add code to save the registration details to a database or file
+
                     com.Parameters.AddWithValue("@email", Usercred.Email);
                     com.Parameters.AddWithValue("@title", this.cbtitle.Text);
                     com.Parameters.AddWithValue("@date", this.datebk.Value.Date);
@@ -136,7 +136,7 @@ namespace EventManagement
                     com.Parameters.AddWithValue("@seattype", this.rbodc.Checked ? "ODC" : this.rbbalcony.Checked ? "Balcony" : "Luxury");
                     com.Parameters.AddWithValue("@seats", this.numseat.Value);
                     com.Parameters.AddWithValue("@price", this.txtprice.Text);
-                // Execute the command
+              
 
                     int ret = com.ExecuteNonQuery();
                 MessageBox.Show("Booking Successful!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -65,7 +65,7 @@ namespace EventManagement
                     string name = reader["name"].ToString();
                     MessageBox.Show("Login successful! " , "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    Usercred.Email = reader["email"].ToString(); // Store email for later use
+                    Usercred.Email = reader["email"].ToString(); 
                     Menu menu = new Menu();
                     menu.Show();
                 }
