@@ -125,24 +125,26 @@
             // 
             // btnrugby
             // 
+            this.btnrugby.BackgroundImage = global::EventManagement.Properties.Resources.rugby;
+            this.btnrugby.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnrugby.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrugby.Location = new System.Drawing.Point(327, 31);
             this.btnrugby.Name = "btnrugby";
             this.btnrugby.Size = new System.Drawing.Size(220, 220);
             this.btnrugby.TabIndex = 8;
-            this.btnrugby.Text = "Rugby Match";
             this.btnrugby.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnrugby.UseVisualStyleBackColor = true;
             this.btnrugby.Click += new System.EventHandler(this.btnrugby_Click);
             // 
             // btnslb
             // 
+            this.btnslb.BackgroundImage = global::EventManagement.Properties.Resources.slvsban;
+            this.btnslb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnslb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnslb.Location = new System.Drawing.Point(60, 31);
             this.btnslb.Name = "btnslb";
             this.btnslb.Size = new System.Drawing.Size(220, 220);
             this.btnslb.TabIndex = 5;
-            this.btnslb.Text = "SL vs Ban T20";
             this.btnslb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnslb.UseVisualStyleBackColor = true;
             this.btnslb.Click += new System.EventHandler(this.btnslb_Click);
