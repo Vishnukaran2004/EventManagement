@@ -28,23 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.CrystalReport51 = new EventManagement.CrystalReport5();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.CrystalReport61 = new EventManagement.CrystalReport6();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 48);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 350);
-            this.dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
@@ -61,13 +50,27 @@
             // 
             this.btnback.BackColor = System.Drawing.Color.LightSalmon;
             this.btnback.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.btnback.Location = new System.Drawing.Point(615, 413);
+            this.btnback.Location = new System.Drawing.Point(772, 548);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(108, 34);
             this.btnback.TabIndex = 24;
             this.btnback.Text = "Back";
             this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
+            // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.DisplayStatusBar = false;
+            this.crystalReportViewer1.DisplayToolbar = false;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(17, 66);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ReportSource = this.CrystalReport61;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(890, 476);
+            this.crystalReportViewer1.TabIndex = 25;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // frmViewMovie
             // 
@@ -76,22 +79,22 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(960, 605);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "frmViewMovie";
             this.Text = "ViewMovie";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnback;
+        private CrystalReport5 CrystalReport51;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalReport6 CrystalReport61;
     }
 }

@@ -30,15 +30,15 @@
         {
             this.btnback = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.CrystalReport51 = new EventManagement.CrystalReport5();
             this.SuspendLayout();
             // 
             // btnback
             // 
             this.btnback.BackColor = System.Drawing.Color.LightSalmon;
             this.btnback.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.btnback.Location = new System.Drawing.Point(637, 404);
+            this.btnback.Location = new System.Drawing.Point(787, 523);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(108, 34);
             this.btnback.TabIndex = 27;
@@ -58,18 +58,19 @@
             this.label1.Text = "View Concert Booking Details";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dataGridView1
+            // crystalReportViewer1
             // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 40);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 350);
-            this.dataGridView1.TabIndex = 25;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.DisplayStatusBar = false;
+            this.crystalReportViewer1.DisplayToolbar = false;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(17, 63);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ReportSource = this.CrystalReport51;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(901, 454);
+            this.crystalReportViewer1.TabIndex = 28;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // frmViewConcert
             // 
@@ -78,13 +79,12 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::EventManagement.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(942, 569);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "frmViewConcert";
             this.Text = "ViewConcert";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,6 +94,7 @@
 
         private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalReport5 CrystalReport51;
     }
 }
