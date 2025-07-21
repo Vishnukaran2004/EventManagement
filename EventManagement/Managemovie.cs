@@ -12,8 +12,10 @@ using System.Xml.Linq;
 
 namespace EventManagement
 {
+    
     public partial class Managemovie : Form
     {
+        private string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
         public Managemovie()
         {
             InitializeComponent();
@@ -28,7 +30,6 @@ namespace EventManagement
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             SqlConnection con = new SqlConnection(str);
             con.Open();
 
@@ -65,7 +66,6 @@ namespace EventManagement
 
         private void Managemovie_Load(object sender, EventArgs e)
         {
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             SqlConnection con = new SqlConnection(str);
             con.Open();
 
@@ -79,6 +79,48 @@ namespace EventManagement
             this.dataGridView1.DataSource = ds.Tables[0];
 
             con.Close();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Ensure it's not the header row
+            if (e.RowIndex >= 0)
+            {
+                // Get the entire row
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+                // Get values from specific cells
+                txttitle.Text= row.Cells["title"].Value.ToString();         // using column name
+                txtgenre.Text= row.Cells[1].Value.ToString();               // or by column index
+                txtyear.Text=row.Cells["year"].Value.ToString();  // convert to int
+
+               
+
+            }
+        }
+
+        private void btnremove_Click(object sender, EventArgs e)
+        {
+            string title= txttitle.Text;
+
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this movie?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                using (SqlConnection conn = new SqlConnection(str))
+                {
+                    conn.Open();
+                    string query = "DELETE FROM moviedetails WHERE title = @title";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@title", title);
+
+                    int rows = cmd.ExecuteNonQuery();
+
+                    if (rows > 0)
+                        MessageBox.Show("Movie deleted successfully!");
+                    else
+                        MessageBox.Show("No movie found with that Title.");
+                }
+            }
         }
     }
 }

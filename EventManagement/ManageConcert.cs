@@ -13,6 +13,7 @@ namespace EventManagement
 {
     public partial class ManageConcert : Form
     {
+        private string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
         public ManageConcert()
         {
             InitializeComponent();
@@ -27,7 +28,6 @@ namespace EventManagement
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             SqlConnection con = new SqlConnection(str);
             con.Open();
 
@@ -65,7 +65,6 @@ namespace EventManagement
 
         private void ManageConcert_Load(object sender, EventArgs e)
         {
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             SqlConnection con = new SqlConnection(str);
             con.Open();
 
@@ -79,6 +78,45 @@ namespace EventManagement
             this.dataGridView1.DataSource = ds.Tables[0];
 
             con.Close();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Ensure it's not the heade  bcr row
+            if (e.RowIndex >= 0)
+            {
+                // Get the entire row
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+                // Get values from specific cells
+                txttitle.Text = row.Cells["title"].Value.ToString();         // using column name
+                dateTimePicker1.Text = row.Cells[1].Value.ToString();               // or by column index
+                txtvenue.Text = row.Cells["venue"].Value.ToString();  // convert to 
+            }
+        }
+
+        private void btnremove_Click(object sender, EventArgs e)
+        {
+            string title = txttitle.Text;
+
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this event?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                using (SqlConnection conn = new SqlConnection(str))
+                {
+                    conn.Open();
+                    string query = "DELETE FROM conertdetails WHERE title = @title";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@title", title);
+
+                    int rows = cmd.ExecuteNonQuery();
+
+                    if (rows > 0)
+                        MessageBox.Show("Event deleted successfully!");
+                    else
+                        MessageBox.Show("No event found with that Title.");
+                }
+            }
         }
     }
 }

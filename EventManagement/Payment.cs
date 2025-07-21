@@ -15,28 +15,10 @@ namespace EventManagement
     public partial class Payment : Form
     {
         int amount;
-       
+
         public Payment()
         {
             InitializeComponent();
-            /*string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
-            SqlConnection con = new SqlConnection(str);
-            con.Open();
-            string sql = "SELECT email,title,price FROM moviebooking WHERE email=@email AND title=@title";
-            SqlCommand com = new SqlCommand(sql, con);
-            com.Parameters.AddWithValue("@email", Usercred.Email);
-            com.Parameters.AddWithValue("@title", Usercred.title);
-            SqlDataReader reader = com.ExecuteReader();
-
-            if (reader.Read())
-            {
-                txtmail.Text = reader["email"].ToString();
-                txtevent.Text = reader["title"].ToString();
-                amount = (int)reader["price"];
-                txtamount.Text = amount.ToString();
-            }
-            reader.Close();
-            con.Close();*/
         }
         public Payment(int price)
         {

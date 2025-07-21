@@ -31,7 +31,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnback = new System.Windows.Forms.Button();
             this.btnremove = new System.Windows.Forms.Button();
-            this.btnupdate = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
             this.txtvenue = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,12 +50,13 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(512, 409);
             this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btnback
             // 
             this.btnback.BackColor = System.Drawing.Color.LightSalmon;
             this.btnback.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnback.Location = new System.Drawing.Point(287, 336);
+            this.btnback.Location = new System.Drawing.Point(135, 387);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(121, 44);
             this.btnback.TabIndex = 16;
@@ -68,23 +68,13 @@
             // 
             this.btnremove.BackColor = System.Drawing.Color.LightSalmon;
             this.btnremove.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnremove.Location = new System.Drawing.Point(135, 336);
+            this.btnremove.Location = new System.Drawing.Point(135, 321);
             this.btnremove.Name = "btnremove";
             this.btnremove.Size = new System.Drawing.Size(121, 44);
             this.btnremove.TabIndex = 15;
             this.btnremove.Text = "Remove";
             this.btnremove.UseVisualStyleBackColor = false;
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnupdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Location = new System.Drawing.Point(287, 258);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(121, 44);
-            this.btnupdate.TabIndex = 14;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnremove.Click += new System.EventHandler(this.btnremove_Click);
             // 
             // btnadd
             // 
@@ -174,7 +164,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.btnremove);
-            this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btnadd);
             this.Name = "ManageConcert";
             this.Text = "ManageConcert";
@@ -190,7 +179,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Button btnremove;
-        private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.TextBox txtvenue;
         private System.Windows.Forms.Label label4;
