@@ -16,9 +16,10 @@ namespace EventManagement
 {
     public partial class Concertbooking : Form
     {
+        private string connStr = "Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+
         private void LoadConcert()
         {
-            string connStr = "Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
@@ -84,8 +85,7 @@ namespace EventManagement
 
         private void btnbook_Click(object sender, EventArgs e)
         {
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
-            SqlConnection con = new SqlConnection(str);
+            SqlConnection con = new SqlConnection(connStr);
             con.Open();
 
             string sql = "INSERT INTO concertbooking(email,title,seats,type,price)VALUES(@email,@title,@seats,@type,@price)";
@@ -144,7 +144,6 @@ namespace EventManagement
 
         private void cbtitle_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string connStr = "Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             string selectedTitle = cbtitle.SelectedValue.ToString();
 
             using (SqlConnection conn = new SqlConnection(connStr))

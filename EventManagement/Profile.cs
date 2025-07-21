@@ -15,12 +15,11 @@ namespace EventManagement
 {
     public partial class frmProfile : Form
     {
+        string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
 
-        
         public frmProfile()
         {
             InitializeComponent();
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             SqlConnection con = new SqlConnection(str);
             con.Open();
             string sql = "SELECT * FROM userdetails WHERE email=@email";

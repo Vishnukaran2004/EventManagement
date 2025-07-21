@@ -33,11 +33,24 @@ namespace EventManagement
             }
             else
             {
-                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                AdminMenu adminMenu = new AdminMenu();
-                adminMenu.Show();
+                if (txtadmin.Text != "admin" || txtpass.Text != "admin123")
+                {
+                    MessageBox.Show("Invalid username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    AdminMenu adminMenu = new AdminMenu();
+                    adminMenu.Show();
+                }
             }
+        }
+
+        private void AdminLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

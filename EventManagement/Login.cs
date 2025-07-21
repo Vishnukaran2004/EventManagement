@@ -14,6 +14,8 @@ namespace EventManagement
 {
     public partial class Login : Form
     {
+        string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+
         public Login()
         {
             InitializeComponent();
@@ -40,7 +42,6 @@ namespace EventManagement
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             SqlConnection con = new SqlConnection(str);
             con.Open();
 
@@ -78,6 +79,11 @@ namespace EventManagement
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

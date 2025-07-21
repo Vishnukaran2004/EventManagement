@@ -36,7 +36,9 @@
             this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movieManageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.concertManageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paymentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,9 +48,9 @@
             this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profileToolStripMenuItem,
             this.viewToolStripMenuItem,
-            this.manageToolStripMenuItem,
-            this.paymentDetailsToolStripMenuItem});
+            this.manageToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 6, 0, 6);
@@ -102,12 +104,28 @@
             this.concertManageToolStripMenuItem.Text = "Concert Manage";
             this.concertManageToolStripMenuItem.Click += new System.EventHandler(this.concertManageToolStripMenuItem_Click);
             // 
-            // paymentDetailsToolStripMenuItem
+            // profileToolStripMenuItem
             // 
-            this.paymentDetailsToolStripMenuItem.Name = "paymentDetailsToolStripMenuItem";
-            this.paymentDetailsToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
-            this.paymentDetailsToolStripMenuItem.Text = "Payment Details";
-            this.paymentDetailsToolStripMenuItem.Click += new System.EventHandler(this.paymentDetailsToolStripMenuItem_Click);
+            this.profileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logoutToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.profileToolStripMenuItem.Text = "Profile";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // AdminMenu
             // 
@@ -140,6 +158,8 @@
         private System.Windows.Forms.ToolStripMenuItem manageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem movieManageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem concertManageToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem paymentDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

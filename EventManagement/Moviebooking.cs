@@ -15,10 +15,10 @@ namespace EventManagement
 {
     public partial class Moviebooking : Form
     {
-       
+       private string connStr = "Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+
         private void LoadMovies()
         {
-            string connStr = "Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
@@ -94,7 +94,6 @@ namespace EventManagement
 
         private void cbtitle_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string connStr = "Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             string selectedTitle = cbtitle.SelectedValue.ToString();
 
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -115,8 +114,7 @@ namespace EventManagement
 
         private void btnbook_Click(object sender, EventArgs e)
         {
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
-            SqlConnection con = new SqlConnection(str);
+            SqlConnection con = new SqlConnection(connStr);
             con.Open();
 
             string sql = "INSERT INTO moviebooking(email,title,date,show,seattype,seats,price)VALUES(@email,@title,@date,@show,@seattype,@seats,@price)";

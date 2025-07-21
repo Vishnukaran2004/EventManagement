@@ -86,5 +86,10 @@ namespace EventManagement
             Menu menu = new Menu();
             menu.Show();
         }
+
+        private void Movies_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

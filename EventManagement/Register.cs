@@ -13,6 +13,8 @@ namespace EventManagement
 {
     public partial class frmRegister : Form
     {
+        string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+
         public frmRegister()
         {
             InitializeComponent();
@@ -39,7 +41,6 @@ namespace EventManagement
 
         private void RegOkbtn_Click(object sender, EventArgs e)
         {
-            string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
             SqlConnection con = new SqlConnection(str);
             con.Open();
 

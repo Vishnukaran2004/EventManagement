@@ -58,5 +58,10 @@ namespace EventManagement
             Menu menu = new Menu();
             menu.Show();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

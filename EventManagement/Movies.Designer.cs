@@ -203,6 +203,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Movies";
             this.Text = "Movies";
+            this.Load += new System.EventHandler(this.Movies_Load);
             this.ResumeLayout(false);
 
         }

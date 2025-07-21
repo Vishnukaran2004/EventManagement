@@ -51,5 +51,17 @@ namespace EventManagement
             PaymentDetail paymentDetails = new PaymentDetail();
             paymentDetails.Show();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminLogin adminLogin = new AdminLogin();
+            adminLogin.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
