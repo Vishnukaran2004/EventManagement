@@ -23,5 +23,10 @@ namespace EventManagement
             AdminMenu adminMenu = new AdminMenu();  
             adminMenu.Show();
         }
+
+        private void frmViewMovie_Load(object sender, EventArgs e)
+        {
+            crystalReportViewer1.RefreshReport();
+        }
     }
 }

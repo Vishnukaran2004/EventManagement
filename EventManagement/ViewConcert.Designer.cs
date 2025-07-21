@@ -65,10 +65,10 @@
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.DisplayStatusBar = false;
             this.crystalReportViewer1.DisplayToolbar = false;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(17, 63);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(3, 40);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = this.CrystalReport51;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(901, 454);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(927, 477);
             this.crystalReportViewer1.TabIndex = 28;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -85,6 +85,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmViewConcert";
             this.Text = "ViewConcert";
+            this.Load += new System.EventHandler(this.frmViewConcert_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,5 +33,10 @@ namespace EventManagement
         {
 
         }
+
+        private void frmViewConcert_Load(object sender, EventArgs e)
+        {
+            crystalReportViewer1.RefreshReport();
+        }
     }
 }

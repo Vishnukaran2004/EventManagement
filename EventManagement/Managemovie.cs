@@ -15,7 +15,7 @@ namespace EventManagement
     
     public partial class Managemovie : Form
     {
-        private string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+        private string str = @"Data Source=MSI;Initial Catalog=EventManagement;Integrated Security=True";
         public Managemovie()
         {
             InitializeComponent();

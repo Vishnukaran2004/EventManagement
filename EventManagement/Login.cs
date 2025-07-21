@@ -14,7 +14,7 @@ namespace EventManagement
 {
     public partial class Login : Form
     {
-        string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+        string str = @"Data Source=MSI;Initial Catalog=EventManagement;Integrated Security=True";
 
         public Login()
         {

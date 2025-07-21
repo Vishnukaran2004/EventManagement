@@ -85,6 +85,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmViewMovie";
             this.Text = "ViewMovie";
+            this.Load += new System.EventHandler(this.frmViewMovie_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,7 +13,7 @@ namespace EventManagement
 {
     public partial class ManageConcert : Form
     {
-        private string str = @"Data Source=LAPTOP-4GUBN0C2;Initial Catalog=EventManagement;Integrated Security=True";
+        private string str = @"Data Source=MSI;Initial Catalog=EventManagement;Integrated Security=True";
         public ManageConcert()
         {
             InitializeComponent();
@@ -105,7 +105,7 @@ namespace EventManagement
                 using (SqlConnection conn = new SqlConnection(str))
                 {
                     conn.Open();
-                    string query = "DELETE FROM conertdetails WHERE title = @title";
+                    string query = "DELETE FROM concertdetails WHERE title = @title";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@title", title);
 

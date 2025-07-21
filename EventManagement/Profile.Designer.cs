@@ -54,6 +54,7 @@
             this.btnupdate.TabIndex = 24;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // ProfBackbtn
             // 
