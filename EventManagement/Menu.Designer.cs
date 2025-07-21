@@ -80,7 +80,6 @@
             this.btnmushroom.Name = "btnmushroom";
             this.btnmushroom.Size = new System.Drawing.Size(220, 220);
             this.btnmushroom.TabIndex = 3;
-            this.btnmushroom.Text = "MUSHROOM";
             this.btnmushroom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmushroom.UseVisualStyleBackColor = true;
             this.btnmushroom.Click += new System.EventHandler(this.btnmushroom_Click);
@@ -93,7 +92,6 @@
             this.btncyum.Name = "btncyum";
             this.btncyum.Size = new System.Drawing.Size(220, 220);
             this.btncyum.TabIndex = 2;
-            this.btncyum.Text = "C  YUM";
             this.btncyum.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncyum.UseVisualStyleBackColor = true;
             this.btncyum.Click += new System.EventHandler(this.btncyum_Click);
@@ -106,7 +104,6 @@
             this.btncam.Name = "btncam";
             this.btncam.Size = new System.Drawing.Size(220, 220);
             this.btncam.TabIndex = 1;
-            this.btncam.Text = "CAMATHAR";
             this.btncam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncam.UseVisualStyleBackColor = true;
             this.btncam.Click += new System.EventHandler(this.btncam_Click);
@@ -134,7 +131,6 @@
             this.btncon2.Name = "btncon2";
             this.btncon2.Size = new System.Drawing.Size(220, 220);
             this.btncon2.TabIndex = 3;
-            this.btncon2.Text = "MENIKE";
             this.btncon2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncon2.UseVisualStyleBackColor = true;
             this.btncon2.Click += new System.EventHandler(this.btncon2_Click);
@@ -159,7 +155,6 @@
             this.btncon1.Name = "btncon1";
             this.btncon1.Size = new System.Drawing.Size(220, 220);
             this.btncon1.TabIndex = 1;
-            this.btncon1.Text = "VIBE ANTONY";
             this.btncon1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncon1.UseVisualStyleBackColor = true;
             this.btncon1.Click += new System.EventHandler(this.btncon1_Click);
@@ -207,21 +202,21 @@
             // editProfileToolStripMenuItem
             // 
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.editProfileToolStripMenuItem.Text = "Edit Profile";
             this.editProfileToolStripMenuItem.Click += new System.EventHandler(this.editProfileToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -268,6 +263,7 @@
             // 
             // labelname
             // 
+            this.labelname.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.labelname.Name = "labelname";
             this.labelname.ReadOnly = true;
             this.labelname.Size = new System.Drawing.Size(300, 27);

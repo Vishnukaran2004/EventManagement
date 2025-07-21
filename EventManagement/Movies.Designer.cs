@@ -51,7 +51,6 @@
             this.btnloc.Name = "btnloc";
             this.btnloc.Size = new System.Drawing.Size(220, 220);
             this.btnloc.TabIndex = 7;
-            this.btnloc.Text = "THE POLICE AND CREW";
             this.btnloc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnloc.UseVisualStyleBackColor = true;
             this.btnloc.Click += new System.EventHandler(this.btnloc_Click);
@@ -66,7 +65,6 @@
             this.btnmoon.Name = "btnmoon";
             this.btnmoon.Size = new System.Drawing.Size(220, 220);
             this.btnmoon.TabIndex = 9;
-            this.btnmoon.Text = "GHOSTY RYDER";
             this.btnmoon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmoon.UseVisualStyleBackColor = true;
             this.btnmoon.Click += new System.EventHandler(this.btnmoon_Click);
@@ -92,9 +90,9 @@
             this.btnape.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnape.Location = new System.Drawing.Point(520, 254);
             this.btnape.Name = "btnape";
+            this.btnape.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnape.Size = new System.Drawing.Size(220, 220);
             this.btnape.TabIndex = 8;
-            this.btnape.Text = "APE LANKA 2";
             this.btnape.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnape.UseVisualStyleBackColor = true;
             this.btnape.Click += new System.EventHandler(this.btnape_Click);
@@ -109,7 +107,6 @@
             this.btnjan.Name = "btnjan";
             this.btnjan.Size = new System.Drawing.Size(220, 220);
             this.btnjan.TabIndex = 6;
-            this.btnjan.Text = "JANA NAYAKAYA";
             this.btnjan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnjan.UseVisualStyleBackColor = true;
             this.btnjan.Click += new System.EventHandler(this.btnjan_Click);
@@ -124,7 +121,6 @@
             this.btnkash.Name = "btnkash";
             this.btnkash.Size = new System.Drawing.Size(220, 220);
             this.btnkash.TabIndex = 5;
-            this.btnkash.Text = "ZOMBIE AND 4 IDIOTS";
             this.btnkash.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnkash.UseVisualStyleBackColor = true;
             this.btnkash.Click += new System.EventHandler(this.btnkash_Click);
@@ -140,7 +136,6 @@
             this.btnai.Name = "btnai";
             this.btnai.Size = new System.Drawing.Size(220, 220);
             this.btnai.TabIndex = 4;
-            this.btnai.Text = "AI BABY";
             this.btnai.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnai.UseVisualStyleBackColor = true;
             this.btnai.Click += new System.EventHandler(this.button5_Click);
@@ -155,7 +150,6 @@
             this.btnmush.Name = "btnmush";
             this.btnmush.Size = new System.Drawing.Size(220, 220);
             this.btnmush.TabIndex = 3;
-            this.btnmush.Text = "MUSHROOM";
             this.btnmush.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmush.UseVisualStyleBackColor = true;
             this.btnmush.Click += new System.EventHandler(this.btnmush_Click);
@@ -170,7 +164,6 @@
             this.btnshi.Name = "btnshi";
             this.btnshi.Size = new System.Drawing.Size(220, 220);
             this.btnshi.TabIndex = 2;
-            this.btnshi.Text = "C  YUM";
             this.btnshi.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnshi.UseVisualStyleBackColor = true;
             this.btnshi.Click += new System.EventHandler(this.btnshi_Click);
@@ -186,7 +179,6 @@
             this.btncam.Name = "btncam";
             this.btncam.Size = new System.Drawing.Size(220, 220);
             this.btncam.TabIndex = 0;
-            this.btncam.Text = "CAMATHAR";
             this.btncam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncam.UseVisualStyleBackColor = true;
             this.btncam.Click += new System.EventHandler(this.btncam_Click);

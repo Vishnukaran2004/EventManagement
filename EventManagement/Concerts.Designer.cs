@@ -79,7 +79,6 @@
             this.btnrod.Name = "btnrod";
             this.btnrod.Size = new System.Drawing.Size(220, 220);
             this.btnrod.TabIndex = 7;
-            this.btnrod.Text = "Return of Dragon";
             this.btnrod.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnrod.UseVisualStyleBackColor = true;
             this.btnrod.Click += new System.EventHandler(this.btnrod_Click);
@@ -93,7 +92,6 @@
             this.btnmenike.Name = "btnmenike";
             this.btnmenike.Size = new System.Drawing.Size(220, 220);
             this.btnmenike.TabIndex = 6;
-            this.btnmenike.Text = "Menike";
             this.btnmenike.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmenike.UseVisualStyleBackColor = true;
             this.btnmenike.Click += new System.EventHandler(this.btnmenike_Click);
@@ -107,7 +105,6 @@
             this.btnva.Name = "btnva";
             this.btnva.Size = new System.Drawing.Size(220, 220);
             this.btnva.TabIndex = 4;
-            this.btnva.Text = "Vibe Antony";
             this.btnva.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnva.UseVisualStyleBackColor = true;
             this.btnva.Click += new System.EventHandler(this.btnva_Click);
